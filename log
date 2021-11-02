@@ -1,0 +1,1315 @@
+./run.sh: Preparing data...
+./run.sh: Preparing lexicon and LM...
+local/prepare_dict.sh: Downloading text for lexicon... Mon Nov  1 08:54:13 UTC 2021.
+local/prepare_dict.sh: processing lexicon text and creating lexicon... Mon Nov  1 08:54:16 UTC 2021.
+local/prepare_dict.sh: Dictionary preparation succeeded
+utils/prepare_lang.sh data/local/dict <UNK> data/local/lang data/lang
+Checking data/local/dict/silence_phones.txt ...
+--> reading data/local/dict/silence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/silence_phones.txt is OK
+
+Checking data/local/dict/optional_silence.txt ...
+--> reading data/local/dict/optional_silence.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/optional_silence.txt is OK
+
+Checking data/local/dict/nonsilence_phones.txt ...
+--> reading data/local/dict/nonsilence_phones.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/nonsilence_phones.txt is OK
+
+Checking disjoint: silence_phones.txt, nonsilence_phones.txt
+--> disjoint property is OK.
+
+Checking data/local/dict/lexicon.txt
+--> reading data/local/dict/lexicon.txt
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/local/dict/lexicon.txt is OK
+
+Checking data/local/dict/extra_questions.txt ...
+--> data/local/dict/extra_questions.txt is empty (this is OK)
+--> SUCCESS [validating dictionary directory data/local/dict]
+
+**Creating data/local/dict/lexiconp.txt from data/local/dict/lexicon.txt
+fstaddselfloops data/lang/phones/wdisambig_phones.int data/lang/phones/wdisambig_words.int 
+prepare_lang.sh: validating output directory
+utils/validate_lang.pl data/lang
+Checking existence of separator file
+separator file data/lang/subword_separator.txt is empty or does not exist, deal in word case.
+Checking data/lang/phones.txt ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/phones.txt is OK
+
+Checking words.txt: #0 ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> data/lang/words.txt is OK
+
+Checking disjoint: silence.txt, nonsilence.txt, disambig.txt ...
+--> silence.txt and nonsilence.txt are disjoint
+--> silence.txt and disambig.txt are disjoint
+--> disambig.txt and nonsilence.txt are disjoint
+--> disjoint property is OK
+
+Checking sumation: silence.txt, nonsilence.txt, disambig.txt ...
+--> found no unexplainable phones in phones.txt
+
+Checking data/lang/phones/context_indep.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.int corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.csl corresponds to data/lang/phones/context_indep.txt
+--> data/lang/phones/context_indep.{txt, int, csl} are OK
+
+Checking data/lang/phones/nonsilence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 148 entry/entries in data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.int corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.csl corresponds to data/lang/phones/nonsilence.txt
+--> data/lang/phones/nonsilence.{txt, int, csl} are OK
+
+Checking data/lang/phones/silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 5 entry/entries in data/lang/phones/silence.txt
+--> data/lang/phones/silence.int corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.csl corresponds to data/lang/phones/silence.txt
+--> data/lang/phones/silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/optional_silence.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.int corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.csl corresponds to data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.{txt, int, csl} are OK
+
+Checking data/lang/phones/disambig.{txt, int, csl} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 2 entry/entries in data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.int corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.csl corresponds to data/lang/phones/disambig.txt
+--> data/lang/phones/disambig.{txt, int, csl} are OK
+
+Checking data/lang/phones/roots.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang/phones/roots.txt
+--> data/lang/phones/roots.int corresponds to data/lang/phones/roots.txt
+--> data/lang/phones/roots.{txt, int} are OK
+
+Checking data/lang/phones/sets.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 38 entry/entries in data/lang/phones/sets.txt
+--> data/lang/phones/sets.int corresponds to data/lang/phones/sets.txt
+--> data/lang/phones/sets.{txt, int} are OK
+
+Checking data/lang/phones/extra_questions.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 9 entry/entries in data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.int corresponds to data/lang/phones/extra_questions.txt
+--> data/lang/phones/extra_questions.{txt, int} are OK
+
+Checking data/lang/phones/word_boundary.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 153 entry/entries in data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.int corresponds to data/lang/phones/word_boundary.txt
+--> data/lang/phones/word_boundary.{txt, int} are OK
+
+Checking optional_silence.txt ...
+--> reading data/lang/phones/optional_silence.txt
+--> data/lang/phones/optional_silence.txt is OK
+
+Checking disambiguation symbols: #0 and #1
+--> data/lang/phones/disambig.txt has "#0" and "#1"
+--> data/lang/phones/disambig.txt is OK
+
+Checking topo ...
+
+Checking word_boundary.txt: silence.txt, nonsilence.txt, disambig.txt ...
+--> data/lang/phones/word_boundary.txt doesn't include disambiguation symbols
+--> data/lang/phones/word_boundary.txt is the union of nonsilence.txt and silence.txt
+--> data/lang/phones/word_boundary.txt is OK
+
+Checking word-level disambiguation symbols...
+--> data/lang/phones/wdisambig.txt exists (newer prepare_lang.sh)
+Checking word_boundary.int and disambig.int
+--> generating a 30 word/subword sequence
+--> resulting phone sequence from L.fst corresponds to the word sequence
+--> L.fst is OK
+--> generating a 38 word/subword sequence
+--> resulting phone sequence from L_disambig.fst corresponds to the word sequence
+--> L_disambig.fst is OK
+
+Checking data/lang/oov.{txt, int} ...
+--> text seems to be UTF-8 or ASCII, checking whitespaces
+--> text contains only allowed whitespaces
+--> 1 entry/entries in data/lang/oov.txt
+--> data/lang/oov.int corresponds to data/lang/oov.txt
+--> data/lang/oov.{txt, int} are OK
+
+--> data/lang/L.fst is olabel sorted
+--> data/lang/L_disambig.fst is olabel sorted
+--> SUCCESS [validating lang directory data/lang]
+=== Building a language model ...
+Using SRILM tools from /opt/kaldi/egs/asr/cv/../../../tools/srilm/bin/i686-m64
+*** Finished building the LM model!
+Converting 'data/local/lm/lm.gz' to FST
+arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test/words.txt - data/lang_test/G.fst 
+LOG (arpa2fst[5.5.0~1-da93]:Read():arpa-file-parser.cc:94) Reading \data\ section.
+LOG (arpa2fst[5.5.0~1-da93]:Read():arpa-file-parser.cc:149) Reading \1-grams: section.
+LOG (arpa2fst[5.5.0~1-da93]:Read():arpa-file-parser.cc:149) Reading \2-grams: section.
+LOG (arpa2fst[5.5.0~1-da93]:Read():arpa-file-parser.cc:149) Reading \3-grams: section.
+LOG (arpa2fst[5.5.0~1-da93]:RemoveRedundantStates():arpa-lm-compiler.cc:359) Reduced num-states from 1046490 to 47826
+fstisstochastic data/lang_test/G.fst 
+5.71966e-06 -0.549944
+Succeeded in formatting LM: 'data/local/lm/lm.gz'
+./run.sh: Preparing the test and train feature files...
+steps/make_mfcc.sh --cmd retry.pl run.pl --mem 2G --nj 12 data/train exp/make_mfcc/train mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/train
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train
+fix_data_dir.sh: kept all 27130 utterances.
+fix_data_dir.sh: old files are kept in data/train/.backup
+steps/compute_cmvn_stats.sh data/train exp/make_mfcc/train mfcc
+Succeeded creating CMVN stats for train
+steps/make_mfcc.sh --cmd retry.pl run.pl --mem 2G --nj 12 data/test exp/make_mfcc/test mfcc
+utils/validate_data_dir.sh: Successfully validated data-directory data/test
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test
+fix_data_dir.sh: kept all 10245 utterances.
+fix_data_dir.sh: old files are kept in data/test/.backup
+steps/compute_cmvn_stats.sh data/test exp/make_mfcc/test mfcc
+Succeeded creating CMVN stats for test
+./run.sh: creating sub-set and training monophone system
+utils/subset_data_dir.sh: reducing #utt from 27130 to 10000
+steps/train_mono.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train.10K data/lang exp/mono
+steps/train_mono.sh: Initializing monophone system.
+steps/train_mono.sh: Compiling training graphs
+steps/train_mono.sh: Aligning data equally (pass 0)
+steps/train_mono.sh: Pass 1
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 2
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 3
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 4
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 5
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 6
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 7
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 8
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 9
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 10
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 11
+steps/train_mono.sh: Pass 12
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 13
+steps/train_mono.sh: Pass 14
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 15
+steps/train_mono.sh: Pass 16
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 17
+steps/train_mono.sh: Pass 18
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 19
+steps/train_mono.sh: Pass 20
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 21
+steps/train_mono.sh: Pass 22
+steps/train_mono.sh: Pass 23
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 24
+steps/train_mono.sh: Pass 25
+steps/train_mono.sh: Pass 26
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 27
+steps/train_mono.sh: Pass 28
+steps/train_mono.sh: Pass 29
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 30
+steps/train_mono.sh: Pass 31
+steps/train_mono.sh: Pass 32
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 33
+steps/train_mono.sh: Pass 34
+steps/train_mono.sh: Pass 35
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 36
+steps/train_mono.sh: Pass 37
+steps/train_mono.sh: Pass 38
+steps/train_mono.sh: Aligning data
+steps/train_mono.sh: Pass 39
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/mono
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono/log/analyze_alignments.log
+120 warnings in exp/mono/log/update.*.log
+257 warnings in exp/mono/log/acc.*.*.log
+6156 warnings in exp/mono/log/align.*.*.log
+exp/mono: nj=12 align prob=-103.00 over 11.11h [retry=0.3%, fail=0.1%] states=116 gauss=991
+steps/train_mono.sh: Done training monophone system in exp/mono
+./run.sh: Aligning data using monophone system
+steps/align_si.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train data/lang exp/mono exp/mono_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/mono, putting alignments in exp/mono_ali
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/mono_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/mono_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+./run.sh: training triphone system with delta features
+steps/train_deltas.sh --cmd retry.pl run.pl --mem 2G 2500 30000 data/train data/lang exp/mono_ali exp/tri1
+steps/train_deltas.sh: accumulating tree stats
+steps/train_deltas.sh: getting questions for tree-building, via clustering
+steps/train_deltas.sh: building the tree
+WARNING (gmm-init-model[5.5.0~1-da93]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 37 with no stats; corresponding phone list: 150 151 152 153 
+** The warnings above about 'no stats' generally mean you have phones **
+** (or groups of phones) in your phone set that had no corresponding data. **
+** You should probably figure out whether something went wrong, **
+** or whether your data just doesn't happen to have examples of those **
+** phones. **
+steps/train_deltas.sh: converting alignments from exp/mono_ali to use current tree
+steps/train_deltas.sh: compiling graphs of transcripts
+steps/train_deltas.sh: training pass 1
+steps/train_deltas.sh: training pass 2
+steps/train_deltas.sh: training pass 3
+steps/train_deltas.sh: training pass 4
+steps/train_deltas.sh: training pass 5
+steps/train_deltas.sh: training pass 6
+steps/train_deltas.sh: training pass 7
+steps/train_deltas.sh: training pass 8
+steps/train_deltas.sh: training pass 9
+steps/train_deltas.sh: training pass 10
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 11
+steps/train_deltas.sh: training pass 12
+steps/train_deltas.sh: training pass 13
+steps/train_deltas.sh: training pass 14
+steps/train_deltas.sh: training pass 15
+steps/train_deltas.sh: training pass 16
+steps/train_deltas.sh: training pass 17
+steps/train_deltas.sh: training pass 18
+steps/train_deltas.sh: training pass 19
+steps/train_deltas.sh: training pass 20
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 21
+steps/train_deltas.sh: training pass 22
+steps/train_deltas.sh: training pass 23
+steps/train_deltas.sh: training pass 24
+steps/train_deltas.sh: training pass 25
+steps/train_deltas.sh: training pass 26
+steps/train_deltas.sh: training pass 27
+steps/train_deltas.sh: training pass 28
+steps/train_deltas.sh: training pass 29
+steps/train_deltas.sh: training pass 30
+steps/train_deltas.sh: aligning data
+steps/train_deltas.sh: training pass 31
+steps/train_deltas.sh: training pass 32
+steps/train_deltas.sh: training pass 33
+steps/train_deltas.sh: training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri1
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1/log/analyze_alignments.log
+3 warnings in exp/tri1/log/build_tree.log
+734 warnings in exp/tri1/log/acc.*.*.log
+1 warnings in exp/tri1/log/questions.log
+34 warnings in exp/tri1/log/update.*.log
+401 warnings in exp/tri1/log/align.*.*.log
+1 warnings in exp/tri1/log/init_model.log
+exp/tri1: nj=12 align prob=-100.82 over 30.06h [retry=0.3%, fail=0.1%] states=1617 gauss=30082 tree-impr=3.25
+steps/train_deltas.sh: Done training system with delta+delta-delta features in exp/tri1
+tree-info exp/tri1/tree 
+tree-info exp/tri1/tree 
+fstpushspecial 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fsttablecompose data/lang_test/L_disambig.fst data/lang_test/G.fst 
+fstisstochastic data/lang_test/tmp/LG.fst 
+-0.013927 -0.0144401
+[info]: LG not stochastic.
+fstcomposecontext --context-size=3 --central-position=1 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_3_1.int data/lang_test/tmp/ilabels_3_1.7408 data/lang_test/tmp/LG.fst 
+fstisstochastic data/lang_test/tmp/CLG_3_1.fst 
+0 -0.0144401
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/tri1/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri1/tree exp/tri1/final.mdl 
+fsttablecompose exp/tri1/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstdeterminizestar --use-log=true 
+fstrmepslocal 
+fstrmsymbols exp/tri1/graph/disambig_tid.int 
+fstisstochastic exp/tri1/graph/HCLGa.fst 
+0.000485195 -0.0394281
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri1/final.mdl exp/tri1/graph/HCLGa.fst 
+steps/decode.sh --nj 12 --cmd retry.pl run.pl --mem 4G exp/tri1/graph data/test exp/tri1/decode
+decode.sh: feature type is delta
+steps/diagnostic/analyze_lats.sh --cmd retry.pl run.pl --mem 4G exp/tri1/graph exp/tri1/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,42,315) and mean=118.3
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri1/decode/log/analyze_lattice_depth_stats.log
+steps/scoring/score_kaldi_wer.sh --cmd retry.pl run.pl --mem 4G data/test exp/tri1/graph exp/tri1/decode
+steps/scoring/score_kaldi_wer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd retry.pl run.pl --mem 4G data/test exp/tri1/graph exp/tri1/decode
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+./run.sh: Aligning data and retraining and realigning with lda_mllt
+steps/align_si.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train data/lang exp/tri1 exp/tri1_ali
+steps/align_si.sh: feature type is delta
+steps/align_si.sh: aligning data in data/train using model from exp/tri1, putting alignments in exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri1_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri1_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_lda_mllt.sh --cmd retry.pl run.pl --mem 2G 4000 50000 data/train data/lang exp/tri1_ali exp/tri2b
+steps/train_lda_mllt.sh: Accumulating LDA statistics.
+steps/train_lda_mllt.sh: Accumulating tree stats
+steps/train_lda_mllt.sh: Getting questions for tree clustering.
+steps/train_lda_mllt.sh: Building the tree
+steps/train_lda_mllt.sh: Initializing the model
+WARNING (gmm-init-model[5.5.0~1-da93]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 37 with no stats; corresponding phone list: 150 151 152 153 
+This is a bad warning.
+steps/train_lda_mllt.sh: Converting alignments from exp/tri1_ali to use current tree
+steps/train_lda_mllt.sh: Compiling graphs of transcripts
+Training pass 1
+Training pass 2
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 3
+Training pass 4
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 5
+Training pass 6
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 7
+Training pass 8
+Training pass 9
+Training pass 10
+Aligning data
+Training pass 11
+Training pass 12
+steps/train_lda_mllt.sh: Estimating MLLT
+Training pass 13
+Training pass 14
+Training pass 15
+Training pass 16
+Training pass 17
+Training pass 18
+Training pass 19
+Training pass 20
+Aligning data
+Training pass 21
+Training pass 22
+Training pass 23
+Training pass 24
+Training pass 25
+Training pass 26
+Training pass 27
+Training pass 28
+Training pass 29
+Training pass 30
+Aligning data
+Training pass 31
+Training pass 32
+Training pass 33
+Training pass 34
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri2b
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b/log/analyze_alignments.log
+1 warnings in exp/tri2b/log/questions.log
+3 warnings in exp/tri2b/log/build_tree.log
+572 warnings in exp/tri2b/log/align.*.*.log
+44 warnings in exp/tri2b/log/update.*.log
+9 warnings in exp/tri2b/log/init_model.log
+1305 warnings in exp/tri2b/log/acc.*.*.log
+30 warnings in exp/tri2b/log/lda_acc.*.log
+exp/tri2b: nj=12 align prob=-44.42 over 30.04h [retry=0.5%, fail=0.2%] states=2833 gauss=50094 tree-impr=3.16 lda-sum=8.88 mllt:impr,logdet=0.89,1.50
+steps/train_lda_mllt.sh: Done training system with LDA+MLLT features in exp/tri2b
+tree-info exp/tri2b/tree 
+tree-info exp/tri2b/tree 
+make-h-transducer --disambig-syms-out=exp/tri2b/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri2b/tree exp/tri2b/final.mdl 
+fstrmsymbols exp/tri2b/graph/disambig_tid.int 
+fstrmepslocal 
+fstdeterminizestar --use-log=true 
+fsttablecompose exp/tri2b/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstminimizeencoded 
+fstisstochastic exp/tri2b/graph/HCLGa.fst 
+0.000487826 -0.0394281
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri2b/final.mdl exp/tri2b/graph/HCLGa.fst 
+steps/decode.sh --nj 12 --cmd retry.pl run.pl --mem 4G exp/tri2b/graph data/test exp/tri2b/decode
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd retry.pl run.pl --mem 4G exp/tri2b/graph exp/tri2b/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,22,168) and mean=62.7
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri2b/decode/log/analyze_lattice_depth_stats.log
+steps/scoring/score_kaldi_wer.sh --cmd retry.pl run.pl --mem 4G data/test exp/tri2b/graph exp/tri2b/decode
+steps/scoring/score_kaldi_wer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd retry.pl run.pl --mem 4G data/test exp/tri2b/graph exp/tri2b/decode
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+./run.sh: Aligning data and retraining and realigning with sat_basis
+steps/align_si.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train data/lang exp/tri2b exp/tri2b_ali
+steps/align_si.sh: feature type is lda
+steps/align_si.sh: aligning data in data/train using model from exp/tri2b, putting alignments in exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri2b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri2b_ali/log/analyze_alignments.log
+steps/align_si.sh: done aligning data.
+steps/train_sat_basis.sh --cmd retry.pl run.pl --mem 2G 5000 100000 data/train data/lang exp/tri2b_ali exp/tri3b
+steps/train_sat_basis.sh: feature type is lda
+steps/train_sat_basis.sh: obtaining initial basis fMLLR transforms since not present in exp/tri2b_ali
+steps/train_sat_basis.sh: Accumulating tree stats
+steps/train_sat_basis.sh: Getting questions for tree clustering.
+steps/train_sat_basis.sh: Building the tree
+steps/train_sat_basis.sh: Initializing the model
+WARNING (gmm-init-model[5.5.0~1-da93]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 37 with no stats; corresponding phone list: 150 151 152 153 
+This is a bad warning.
+steps/train_sat_basis.sh: Converting alignments from exp/tri2b_ali to use current tree
+steps/train_sat_basis.sh: Compiling graphs of transcripts
+Pass 1
+Pass 2
+Estimating basis and fMLLR transforms
+Pass 3
+Pass 4
+Estimating basis and fMLLR transforms
+Pass 5
+Pass 6
+Estimating basis and fMLLR transforms
+Pass 7
+Pass 8
+Pass 9
+Pass 10
+Aligning data
+Pass 11
+Pass 12
+Estimating basis and fMLLR transforms
+Pass 13
+Pass 14
+Pass 15
+Pass 16
+Pass 17
+Pass 18
+Pass 19
+Pass 20
+Aligning data
+Pass 21
+Pass 22
+Pass 23
+Pass 24
+Pass 25
+Pass 26
+Pass 27
+Pass 28
+Pass 29
+Pass 30
+Aligning data
+Pass 31
+Pass 32
+Pass 33
+Pass 34
+1 warnings in exp/tri3b/log/questions.log
+13 warnings in exp/tri3b/log/init_model.log
+3 warnings in exp/tri3b/log/build_tree.log
+4 warnings in exp/tri3b/log/est_alimdl.log
+368 warnings in exp/tri3b/log/align.*.*.log
+76 warnings in exp/tri3b/log/fmllr.*.*.log
+300 warnings in exp/tri3b/log/fmllr_app.*.*.log
+150 warnings in exp/tri3b/log/fmllr_est.*.*.log
+120 warnings in exp/tri3b/log/update.*.log
+1237 warnings in exp/tri3b/log/acc.*.*.log
+steps/train_sat_basis.sh: Likelihood evolution:
+-46.9588 -46.6616 -46.3235 -45.9214 -44.8122 -44.432 -43.9148 -43.5456 -43.2397 -42.6646 -42.4019 -42.54 -42.2788 -42.1326 -42.0019 -41.8824 -41.7696 -41.6633 -41.5642 -41.3737 -41.2377 -41.1511 -41.0719 -40.9959 -40.9235 -40.8529 -40.7828 -40.7138 -40.647 -40.5469 -40.4694 -40.4381 -40.4171 -40.4009 
+Done
+steps/align_fmllr.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train data/lang exp/tri3b exp/tri3b_ali
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri3b_ali
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali/log/analyze_alignments.log
+173 warnings in exp/tri3b_ali/log/align_pass1.*.log
+24933 warnings in exp/tri3b_ali/log/fmllr.*.log
+1918 warnings in exp/tri3b_ali/log/align_pass2.*.log
+tree-info exp/tri3b/tree 
+tree-info exp/tri3b/tree 
+make-h-transducer --disambig-syms-out=exp/tri3b/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_3_1 exp/tri3b/tree exp/tri3b/final.mdl 
+fsttablecompose exp/tri3b/graph/Ha.fst data/lang_test/tmp/CLG_3_1.fst 
+fstdeterminizestar --use-log=true 
+fstrmsymbols exp/tri3b/graph/disambig_tid.int 
+fstrmepslocal 
+fstminimizeencoded 
+fstisstochastic exp/tri3b/graph/HCLGa.fst 
+0.000487022 -0.0394281
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=0.1 --reorder=true exp/tri3b/final.mdl exp/tri3b/graph/HCLGa.fst 
+steps/decode_fmllr.sh --nj 12 --cmd retry.pl run.pl --mem 4G exp/tri3b/graph data/test exp/tri3b/decode
+steps/decode.sh --scoring-opts  --num-threads 1 --skip-scoring false --acwt 0.083333 --nj 12 --cmd retry.pl run.pl --mem 4G --beam 10.0 --model exp/tri3b/final.alimdl --max-active 2000 exp/tri3b/graph data/test exp/tri3b/decode.si
+decode.sh: feature type is lda
+steps/diagnostic/analyze_lats.sh --cmd retry.pl run.pl --mem 4G exp/tri3b/graph exp/tri3b/decode.si
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,12,82) and mean=31.5
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode.si/log/analyze_lattice_depth_stats.log
+steps/scoring/score_kaldi_wer.sh --cmd retry.pl run.pl --mem 4G data/test exp/tri3b/graph exp/tri3b/decode.si
+steps/scoring/score_kaldi_wer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd retry.pl run.pl --mem 4G data/test exp/tri3b/graph exp/tri3b/decode.si
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/decode_fmllr.sh: feature type is lda
+steps/decode_fmllr.sh: getting first-pass fMLLR transforms.
+steps/decode_fmllr.sh: doing main lattice generation phase
+steps/decode_fmllr.sh: estimating fMLLR transforms a second time.
+steps/decode_fmllr.sh: doing a final pass of acoustic rescoring.
+steps/diagnostic/analyze_lats.sh --cmd retry.pl run.pl --mem 4G exp/tri3b/graph exp/tri3b/decode
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,19,131) and mean=49.8
+steps/diagnostic/analyze_lats.sh: see stats in exp/tri3b/decode/log/analyze_lattice_depth_stats.log
+steps/scoring/score_kaldi_wer.sh --cmd retry.pl run.pl --mem 4G data/test exp/tri3b/graph exp/tri3b/decode
+steps/scoring/score_kaldi_wer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd retry.pl run.pl --mem 4G data/test exp/tri3b/graph exp/tri3b/decode
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+./run.sh: Training a regular chain model using the e2e alignments...
+local/chain/run_tdnn.sh --nj 12
+local/nnet3/run_ivector_common.sh: preparing directory for speed-perturbed data
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur and the reco2dur files are present
+... in data/train, because obtaining it after speed-perturbing
+... would be very slow, and you might need them.
+utils/data/get_utt2dur.sh: data/train/utt2dur already exists with the expected length.  We won't recompute it.
+utils/data/get_reco2dur.sh: obtaining durations from recordings
+utils/data/get_reco2dur.sh: could not get recording lengths from sphere-file headers, using wav-to-duration
+utils/data/get_reco2dur.sh: computed data/train/reco2dur
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh: combined segments
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining utt2num_frames as it does not exist everywhere**
+utils/data/combine_data.sh: combined reco2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 81390 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+local/nnet3/run_ivector_common.sh: creating high-resolution MFCC features
+utils/copy_data_dir.sh: copied data from data/train_sp to data/train_sp_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+utils/copy_data_dir.sh: copied data from data/test to data/test_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+utils/data/perturb_data_dir_volume.sh: added volume perturbation to the data in data/train_sp_hires
+steps/make_mfcc.sh --nj 12 --mfcc-config conf/mfcc_hires.conf --cmd retry.pl run.pl --mem 2G data/train_sp_hires
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_sp_hires
+steps/compute_cmvn_stats.sh data/train_sp_hires
+Succeeded creating CMVN stats for train_sp_hires
+fix_data_dir.sh: kept all 81390 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp_hires/.backup
+steps/make_mfcc.sh --nj 12 --mfcc-config conf/mfcc_hires.conf --cmd retry.pl run.pl --mem 2G data/test_hires
+steps/make_mfcc.sh: moving data/test_hires/feats.scp to data/test_hires/.backup
+utils/validate_data_dir.sh: Successfully validated data-directory data/test_hires
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for test_hires
+steps/compute_cmvn_stats.sh data/test_hires
+Succeeded creating CMVN stats for test_hires
+fix_data_dir.sh: kept all 10245 utterances.
+fix_data_dir.sh: old files are kept in data/test_hires/.backup
+local/nnet3/run_ivector_common.sh: computing a subset of data to train the diagonal UBM.
+utils/data/subset_data_dir.sh: reducing #utt from 81390 to 20347
+local/nnet3/run_ivector_common.sh: computing a PCA transform from the hires data.
+steps/online/nnet2/get_pca_transform.sh --cmd retry.pl run.pl --mem 2G --splice-opts --left-context=3 --right-context=3 --max-utts 10000 --subsample 2 exp/nnet3/diag_ubm/train_sp_hires_subset exp/nnet3/pca_transform
+Done estimating PCA transform in exp/nnet3/pca_transform
+local/nnet3/run_ivector_common.sh: training the diagonal UBM.
+steps/online/nnet2/train_diag_ubm.sh --cmd retry.pl run.pl --mem 2G --nj 12 --num-frames 700000 --num-threads 4 exp/nnet3/diag_ubm/train_sp_hires_subset 512 exp/nnet3/pca_transform exp/nnet3/diag_ubm
+steps/online/nnet2/train_diag_ubm.sh: Directory exp/nnet3/diag_ubm already exists. Backing up diagonal UBM in exp/nnet3/diag_ubm/backup.prJ
+steps/online/nnet2/train_diag_ubm.sh: initializing model from E-M in memory, 
+steps/online/nnet2/train_diag_ubm.sh: starting from 256 Gaussians, reaching 512;
+steps/online/nnet2/train_diag_ubm.sh: for 20 iterations, using at most 700000 frames of data
+Getting Gaussian-selection info
+steps/online/nnet2/train_diag_ubm.sh: will train for 4 iterations, in parallel over
+steps/online/nnet2/train_diag_ubm.sh: 12 machines, parallelized with 'retry.pl run.pl --mem 2G'
+steps/online/nnet2/train_diag_ubm.sh: Training pass 0
+steps/online/nnet2/train_diag_ubm.sh: Training pass 1
+steps/online/nnet2/train_diag_ubm.sh: Training pass 2
+steps/online/nnet2/train_diag_ubm.sh: Training pass 3
+local/nnet3/run_ivector_common.sh: training the iVector extractor
+steps/online/nnet2/train_ivector_extractor.sh --cmd retry.pl run.pl --mem 2G --nj 12 data/train_sp_hires exp/nnet3/diag_ubm exp/nnet3/extractor
+steps/online/nnet2/train_ivector_extractor.sh: doing Gaussian selection and posterior computation
+Accumulating stats (pass 0)
+Summing accs (pass 0)
+Updating model (pass 0)
+Accumulating stats (pass 1)
+Summing accs (pass 1)
+Updating model (pass 1)
+Accumulating stats (pass 2)
+Summing accs (pass 2)
+Updating model (pass 2)
+Accumulating stats (pass 3)
+Summing accs (pass 3)
+Updating model (pass 3)
+Accumulating stats (pass 4)
+Summing accs (pass 4)
+Updating model (pass 4)
+Accumulating stats (pass 5)
+Summing accs (pass 5)
+Updating model (pass 5)
+Accumulating stats (pass 6)
+Summing accs (pass 6)
+Updating model (pass 6)
+Accumulating stats (pass 7)
+Summing accs (pass 7)
+Updating model (pass 7)
+Accumulating stats (pass 8)
+Summing accs (pass 8)
+Updating model (pass 8)
+Accumulating stats (pass 9)
+Summing accs (pass 9)
+Updating model (pass 9)
+utils/data/modify_speaker_info.sh: copied data from data/train_sp_hires to exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2, number of speakers changed from 81390 to 81390
+utils/validate_data_dir.sh: Successfully validated data-directory exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2
+steps/online/nnet2/extract_ivectors_online.sh --cmd retry.pl run.pl --mem 2G --nj 12 exp/nnet3/ivectors_train_sp_hires/train_sp_hires_max2 exp/nnet3/extractor exp/nnet3/ivectors_train_sp_hires
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_train_sp_hires using the extractor in exp/nnet3/extractor.
+steps/online/nnet2/extract_ivectors_online.sh --cmd retry.pl run.pl --mem 2G --nj 12 data/test_hires exp/nnet3/extractor exp/nnet3/ivectors_test_hires
+steps/online/nnet2/extract_ivectors_online.sh: extracting iVectors
+steps/online/nnet2/extract_ivectors_online.sh: combining iVectors across jobs
+steps/online/nnet2/extract_ivectors_online.sh: done extracting (online) iVectors to exp/nnet3/ivectors_test_hires using the extractor in exp/nnet3/extractor.
+local/nnet3/run_ivector_common.sh: preparing directory for low-resolution speed-perturbed data (for alignment)
+utils/data/perturb_data_dir_speed_3way.sh: making sure the utt2dur and the reco2dur files are present
+... in data/train, because obtaining it after speed-perturbing
+... would be very slow, and you might need them.
+utils/data/get_utt2dur.sh: data/train/utt2dur already exists with the expected length.  We won't recompute it.
+utils/data/get_reco2dur.sh: data/train/reco2dur already exists with the expected length.  We won't recompute it.
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed0.9
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed0.9
+utils/data/perturb_data_dir_speed.sh: generated speed-perturbed version of data in data/train, in data/train_sp_speed1.1
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp_speed1.1
+utils/data/combine_data.sh data/train_sp data/train data/train_sp_speed0.9 data/train_sp_speed1.1
+utils/data/combine_data.sh: combined utt2uniq
+utils/data/combine_data.sh: combined segments
+utils/data/combine_data.sh: combined utt2spk
+utils/data/combine_data.sh [info]: not combining utt2lang as it does not exist
+utils/data/combine_data.sh: combined utt2dur
+utils/data/combine_data.sh [info]: **not combining utt2num_frames as it does not exist everywhere**
+utils/data/combine_data.sh: combined reco2dur
+utils/data/combine_data.sh [info]: **not combining feats.scp as it does not exist everywhere**
+utils/data/combine_data.sh: combined text
+utils/data/combine_data.sh [info]: **not combining cmvn.scp as it does not exist everywhere**
+utils/data/combine_data.sh [info]: not combining vad.scp as it does not exist
+utils/data/combine_data.sh [info]: not combining reco2file_and_channel as it does not exist
+utils/data/combine_data.sh: combined wav.scp
+utils/data/combine_data.sh [info]: not combining spk2gender as it does not exist
+fix_data_dir.sh: kept all 81390 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+utils/data/perturb_data_dir_speed_3way.sh: generated 3-way speed-perturbed version of data in data/train, in data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+local/nnet3/run_ivector_common.sh: making MFCC features for low-resolution speed-perturbed data (needed for alignments)
+steps/make_mfcc.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train_sp
+utils/validate_data_dir.sh: Successfully validated data-directory data/train_sp
+steps/make_mfcc.sh [info]: segments file exists: using that.
+steps/make_mfcc.sh: Succeeded creating MFCC features for train_sp
+steps/compute_cmvn_stats.sh data/train_sp
+Succeeded creating CMVN stats for train_sp
+local/nnet3/run_ivector_common.sh: fixing input data-dir to remove nonexistent features, in case some 
+.. speed-perturbed segments were too short.
+fix_data_dir.sh: kept all 81390 utterances.
+fix_data_dir.sh: old files are kept in data/train_sp/.backup
+local/nnet3/run_ivector_common.sh: aligning with the perturbed low-resolution data
+steps/align_fmllr.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train_sp data/lang exp/tri3b exp/tri3b_ali_train_sp
+steps/align_fmllr.sh: feature type is lda
+steps/align_fmllr.sh: compiling training graphs
+steps/align_fmllr.sh: aligning data in data/train_sp using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr.sh: computing fMLLR transforms
+steps/align_fmllr.sh: doing final alignment.
+steps/align_fmllr.sh: done aligning data.
+steps/diagnostic/analyze_alignments.sh --cmd retry.pl run.pl --mem 2G data/lang exp/tri3b_ali_train_sp
+steps/diagnostic/analyze_alignments.sh: see stats in exp/tri3b_ali_train_sp/log/analyze_alignments.log
+543 warnings in exp/tri3b_ali_train_sp/log/align_pass1.*.log
+7722 warnings in exp/tri3b_ali_train_sp/log/align_pass2.*.log
+74676 warnings in exp/tri3b_ali_train_sp/log/fmllr.*.log
+local/chain/run_chain_common.sh --stage 0 --gmm-dir exp/tri3b --ali-dir exp/tri3b_ali_train_sp --lores-train-data-dir data/train_sp --lang data/lang_chain --lat-dir exp/chain/tri3b_train_sp_lats --num-leaves 7000 --tree-dir exp/chain/tree_a_sp
+local/chain/run_chain_common.sh: creating lang directory with one state per phone.
+steps/align_fmllr_lats.sh --nj 12 --cmd retry.pl run.pl --mem 2G data/train_sp data/lang_chain exp/tri3b exp/chain/tri3b_train_sp_lats
+steps/align_fmllr_lats.sh: feature type is lda
+steps/align_fmllr_lats.sh: compiling training graphs
+steps/align_fmllr_lats.sh: aligning data in data/train_sp using exp/tri3b/final.alimdl and speaker-independent features.
+steps/align_fmllr_lats.sh: computing fMLLR transforms
+steps/align_fmllr_lats.sh: generating lattices containing alternate pronunciations.
+steps/align_fmllr_lats.sh: done generating lattices from training transcripts.
+74676 warnings in exp/chain/tri3b_train_sp_lats/log/fmllr.*.log
+546 warnings in exp/chain/tri3b_train_sp_lats/log/align_pass1.*.log
+281 warnings in exp/chain/tri3b_train_sp_lats/log/generate_lattices.*.log
+steps/nnet3/chain/build_tree.sh --frame-subsampling-factor 3 --context-opts --context-width=2 --central-position=1 --cmd retry.pl run.pl --mem 2G 7000 data/train_sp data/lang_chain exp/tri3b_ali_train_sp exp/chain/tree_a_sp
+steps/nnet3/chain/build_tree.sh: feature type is lda
+steps/nnet3/chain/build_tree.sh: Using transforms from exp/tri3b_ali_train_sp
+steps/nnet3/chain/build_tree.sh: Initializing monophone model (for alignment conversion, in case topology changed)
+steps/nnet3/chain/build_tree.sh: Accumulating tree stats
+steps/nnet3/chain/build_tree.sh: Getting questions for tree clustering.
+steps/nnet3/chain/build_tree.sh: Building the tree
+steps/nnet3/chain/build_tree.sh: Initializing the model
+WARNING (gmm-init-model[5.5.0~1-da93]:InitAmGmm():gmm-init-model.cc:55) Tree has pdf-id 37 with no stats; corresponding phone list: 150 151 152 153 
+This is a bad warning.
+steps/nnet3/chain/build_tree.sh: Converting alignments from exp/tri3b_ali_train_sp to use current tree
+steps/nnet3/chain/build_tree.sh: Done building tree
+local/chain/run_tdnn.sh: creating neural net configs using the xconfig parser
+tree-info exp/chain/tree_a_sp/tree 
+steps/nnet3/xconfig_to_configs.py --xconfig-file exp/chain/tdnn_1a_sp/configs/network.xconfig --config-dir exp/chain/tdnn_1a_sp/configs/
+nnet3-init exp/chain/tdnn_1a_sp/configs//init.config exp/chain/tdnn_1a_sp/configs//init.raw 
+LOG (nnet3-init[5.5.0~1-da93]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn_1a_sp/configs//init.raw
+nnet3-info exp/chain/tdnn_1a_sp/configs//init.raw 
+nnet3-init exp/chain/tdnn_1a_sp/configs//ref.config exp/chain/tdnn_1a_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.0~1-da93]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn_1a_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn_1a_sp/configs//ref.raw 
+nnet3-init exp/chain/tdnn_1a_sp/configs//ref.config exp/chain/tdnn_1a_sp/configs//ref.raw 
+LOG (nnet3-init[5.5.0~1-da93]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to exp/chain/tdnn_1a_sp/configs//ref.raw
+nnet3-info exp/chain/tdnn_1a_sp/configs//ref.raw 
+2021-11-01 14:09:51,173 [steps/nnet3/chain/train.py:35 - <module> - INFO ] Starting chain model trainer (train.py)
+2021-11-01 14:09:51,182 [steps/nnet3/chain/train.py:281 - train - INFO ] Arguments for the experiment
+{'alignment_subsampling_factor': 3,
+ 'apply_deriv_weights': False,
+ 'backstitch_training_interval': 1,
+ 'backstitch_training_scale': 0.0,
+ 'chunk_left_context': 0,
+ 'chunk_left_context_initial': -1,
+ 'chunk_right_context': 0,
+ 'chunk_right_context_final': -1,
+ 'chunk_width': '150,110,100',
+ 'cleanup': True,
+ 'cmvn_opts': '--norm-means=false --norm-vars=false',
+ 'combine_sum_to_one_penalty': 0.0,
+ 'command': 'retry.pl run.pl --mem 4G',
+ 'compute_per_dim_accuracy': False,
+ 'deriv_truncate_margin': None,
+ 'dir': 'exp/chain/tdnn_1a_sp',
+ 'do_final_combination': True,
+ 'dropout_schedule': '0,0@0.20,0.5@0.50,0',
+ 'egs_command': None,
+ 'egs_dir': None,
+ 'egs_nj': 0,
+ 'egs_opts': '--frames-overlap-per-eg 0 --constrained false',
+ 'egs_stage': -10,
+ 'email': None,
+ 'exit_stage': None,
+ 'feat_dir': 'data/train_sp_hires',
+ 'final_effective_lrate': 2.5e-05,
+ 'frame_subsampling_factor': 3,
+ 'frames_per_iter': 1500000,
+ 'initial_effective_lrate': 0.00025,
+ 'input_model': None,
+ 'l2_regularize': 0.0,
+ 'lat_dir': 'exp/chain/tri3b_train_sp_lats',
+ 'leaky_hmm_coefficient': 0.1,
+ 'left_deriv_truncate': None,
+ 'left_tolerance': 5,
+ 'lm_opts': '--num-extra-lm-states=2000',
+ 'max_lda_jobs': 10,
+ 'max_models_combine': 20,
+ 'max_objective_evaluations': 30,
+ 'max_param_change': 2.0,
+ 'momentum': 0.0,
+ 'num_chunk_per_minibatch': '64,32',
+ 'num_epochs': 6.0,
+ 'num_jobs_final': 1,
+ 'num_jobs_initial': 1,
+ 'num_jobs_step': 1,
+ 'online_ivector_dir': 'exp/nnet3/ivectors_train_sp_hires',
+ 'preserve_model_interval': 100,
+ 'presoftmax_prior_scale_power': -0.25,
+ 'proportional_shrink': 0.0,
+ 'rand_prune': 4.0,
+ 'remove_egs': True,
+ 'reporting_interval': 0.1,
+ 'right_tolerance': 5,
+ 'samples_per_iter': 400000,
+ 'shrink_saturation_threshold': 0.4,
+ 'shrink_value': 1.0,
+ 'shuffle_buffer_size': 5000,
+ 'srand': 0,
+ 'stage': -10,
+ 'train_opts': ['--optimization.memory-compression-level=2'],
+ 'tree_dir': 'exp/chain/tree_a_sp',
+ 'use_gpu': 'wait',
+ 'xent_regularize': 0.1}
+2021-11-01 14:09:55,649 [steps/nnet3/chain/train.py:338 - train - INFO ] Creating phone language-model
+2021-11-01 14:09:58,220 [steps/nnet3/chain/train.py:343 - train - INFO ] Creating denominator FST
+copy-transition-model exp/chain/tree_a_sp/final.mdl exp/chain/tdnn_1a_sp/0.trans_mdl 
+LOG (copy-transition-model[5.5.0~1-da93]:main():copy-transition-model.cc:62) Copied transition model.
+2021-11-01 14:09:59,271 [steps/nnet3/chain/train.py:350 - train - INFO ] Initializing a basic network for estimating preconditioning matrix
+2021-11-01 14:09:59,404 [steps/nnet3/chain/train.py:379 - train - INFO ] Generating egs
+steps/nnet3/chain/get_egs.sh --frames-overlap-per-eg 0 --constrained false --cmd retry.pl run.pl --mem 4G --cmvn-opts --norm-means=false --norm-vars=false --online-ivector-dir exp/nnet3/ivectors_train_sp_hires --left-context 35 --right-context 35 --left-context-initial -1 --right-context-final -1 --left-tolerance 5 --right-tolerance 5 --frame-subsampling-factor 3 --alignment-subsampling-factor 3 --stage -10 --frames-per-iter 1500000 --frames-per-eg 150,110,100 --srand 0 data/train_sp_hires exp/chain/tdnn_1a_sp exp/chain/tri3b_train_sp_lats exp/chain/tdnn_1a_sp/egs
+steps/nnet3/chain/get_egs.sh: File data/train_sp_hires/utt2uniq exists, so ensuring the hold-out set includes all perturbed versions of the same source utterance.
+steps/nnet3/chain/get_egs.sh: Holding out 300 utterances in validation set and 300 in training diagnostic set, out of total 81390.
+steps/nnet3/chain/get_egs.sh: creating egs.  To ensure they are not deleted later you can do:  touch exp/chain/tdnn_1a_sp/egs/.nodelete
+steps/nnet3/chain/get_egs.sh: feature type is raw, with 'apply-cmvn'
+tree-info exp/chain/tdnn_1a_sp/tree 
+feat-to-dim scp:exp/nnet3/ivectors_train_sp_hires/ivector_online.scp - 
+steps/nnet3/chain/get_egs.sh: working out number of frames of training data
+steps/nnet3/chain/get_egs.sh: working out feature dim
+steps/nnet3/chain/get_egs.sh: creating 22 archives, each with 14956 egs, with
+steps/nnet3/chain/get_egs.sh:   150,110,100 labels per example, and (left,right) context = (35,35)
+steps/nnet3/chain/get_egs.sh: Getting validation and training subset examples in background.
+steps/nnet3/chain/get_egs.sh: Generating training examples on disk
+steps/nnet3/chain/get_egs.sh: Getting subsets of validation examples for diagnostics and combination.
+steps/nnet3/chain/get_egs.sh: recombining and shuffling order of archives on disk
+steps/nnet3/chain/get_egs.sh: Removing temporary archives, alignments and lattices
+steps/nnet3/chain/get_egs.sh: Finished preparing training examples
+2021-11-01 14:10:26,102 [steps/nnet3/chain/train.py:428 - train - INFO ] Copying the properties from exp/chain/tdnn_1a_sp/egs to exp/chain/tdnn_1a_sp
+2021-11-01 14:10:26,103 [steps/nnet3/chain/train.py:442 - train - INFO ] Computing the preconditioning matrix for input features
+2021-11-01 14:10:29,611 [steps/nnet3/chain/train.py:451 - train - INFO ] Preparing the initial acoustic model.
+2021-11-01 14:10:30,481 [steps/nnet3/chain/train.py:485 - train - INFO ] Training will run for 6.0 epochs = 396 iterations
+2021-11-01 14:10:30,482 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 0/395   Jobs: 1   Epoch: 0.00/6.0 (0.0% complete)   lr: 0.000250   
+2021-11-01 14:11:15,487 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 1/395   Jobs: 1   Epoch: 0.02/6.0 (0.3% complete)   lr: 0.000249   
+2021-11-01 14:11:53,668 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 2/395   Jobs: 1   Epoch: 0.03/6.0 (0.5% complete)   lr: 0.000247   
+2021-11-01 14:12:32,491 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 3/395   Jobs: 1   Epoch: 0.05/6.0 (0.8% complete)   lr: 0.000246   
+2021-11-01 14:13:11,219 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 4/395   Jobs: 1   Epoch: 0.06/6.0 (1.0% complete)   lr: 0.000244   
+2021-11-01 14:13:49,346 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 5/395   Jobs: 1   Epoch: 0.08/6.0 (1.3% complete)   lr: 0.000243   
+2021-11-01 14:14:28,049 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 6/395   Jobs: 1   Epoch: 0.09/6.0 (1.5% complete)   lr: 0.000241   
+2021-11-01 14:15:07,285 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 7/395   Jobs: 1   Epoch: 0.11/6.0 (1.8% complete)   lr: 0.000240   
+2021-11-01 14:15:46,091 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 8/395   Jobs: 1   Epoch: 0.12/6.0 (2.0% complete)   lr: 0.000239   
+2021-11-01 14:16:25,110 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 9/395   Jobs: 1   Epoch: 0.14/6.0 (2.3% complete)   lr: 0.000237   
+2021-11-01 14:17:03,783 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 10/395   Jobs: 1   Epoch: 0.15/6.0 (2.5% complete)   lr: 0.000236   
+2021-11-01 14:17:42,427 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 11/395   Jobs: 1   Epoch: 0.17/6.0 (2.8% complete)   lr: 0.000235   
+2021-11-01 14:18:20,859 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 12/395   Jobs: 1   Epoch: 0.18/6.0 (3.0% complete)   lr: 0.000233   
+2021-11-01 14:18:59,986 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 13/395   Jobs: 1   Epoch: 0.20/6.0 (3.3% complete)   lr: 0.000232   
+2021-11-01 14:19:38,894 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 14/395   Jobs: 1   Epoch: 0.21/6.0 (3.5% complete)   lr: 0.000230   
+2021-11-01 14:20:17,460 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 15/395   Jobs: 1   Epoch: 0.23/6.0 (3.8% complete)   lr: 0.000229   
+2021-11-01 14:20:56,317 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 16/395   Jobs: 1   Epoch: 0.24/6.0 (4.0% complete)   lr: 0.000228   
+2021-11-01 14:21:35,126 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 17/395   Jobs: 1   Epoch: 0.26/6.0 (4.3% complete)   lr: 0.000226   
+2021-11-01 14:22:13,986 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 18/395   Jobs: 1   Epoch: 0.27/6.0 (4.5% complete)   lr: 0.000225   
+2021-11-01 14:22:53,188 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 19/395   Jobs: 1   Epoch: 0.29/6.0 (4.8% complete)   lr: 0.000224   
+2021-11-01 14:23:32,127 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 20/395   Jobs: 1   Epoch: 0.30/6.0 (5.1% complete)   lr: 0.000223   
+2021-11-01 14:24:14,872 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 21/395   Jobs: 1   Epoch: 0.32/6.0 (5.3% complete)   lr: 0.000221   
+2021-11-01 14:24:54,401 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 22/395   Jobs: 1   Epoch: 0.33/6.0 (5.6% complete)   lr: 0.000220   
+2021-11-01 14:25:33,448 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 23/395   Jobs: 1   Epoch: 0.35/6.0 (5.8% complete)   lr: 0.000219   
+2021-11-01 14:26:12,334 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 24/395   Jobs: 1   Epoch: 0.36/6.0 (6.1% complete)   lr: 0.000217   
+2021-11-01 14:26:51,670 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 25/395   Jobs: 1   Epoch: 0.38/6.0 (6.3% complete)   lr: 0.000216   
+2021-11-01 14:27:30,820 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 26/395   Jobs: 1   Epoch: 0.39/6.0 (6.6% complete)   lr: 0.000215   
+2021-11-01 14:28:09,209 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 27/395   Jobs: 1   Epoch: 0.41/6.0 (6.8% complete)   lr: 0.000214   
+2021-11-01 14:28:48,049 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 28/395   Jobs: 1   Epoch: 0.42/6.0 (7.1% complete)   lr: 0.000212   
+2021-11-01 14:29:27,365 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 29/395   Jobs: 1   Epoch: 0.44/6.0 (7.3% complete)   lr: 0.000211   
+2021-11-01 14:30:06,343 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 30/395   Jobs: 1   Epoch: 0.45/6.0 (7.6% complete)   lr: 0.000210   
+2021-11-01 14:30:45,503 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 31/395   Jobs: 1   Epoch: 0.47/6.0 (7.8% complete)   lr: 0.000209   
+2021-11-01 14:31:24,185 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 32/395   Jobs: 1   Epoch: 0.48/6.0 (8.1% complete)   lr: 0.000208   
+2021-11-01 14:32:02,770 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 33/395   Jobs: 1   Epoch: 0.50/6.0 (8.3% complete)   lr: 0.000206   
+2021-11-01 14:32:41,307 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 34/395   Jobs: 1   Epoch: 0.52/6.0 (8.6% complete)   lr: 0.000205   
+2021-11-01 14:33:20,537 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 35/395   Jobs: 1   Epoch: 0.53/6.0 (8.8% complete)   lr: 0.000204   
+2021-11-01 14:33:59,534 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 36/395   Jobs: 1   Epoch: 0.55/6.0 (9.1% complete)   lr: 0.000203   
+2021-11-01 14:34:38,158 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 37/395   Jobs: 1   Epoch: 0.56/6.0 (9.3% complete)   lr: 0.000202   
+2021-11-01 14:35:17,043 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 38/395   Jobs: 1   Epoch: 0.58/6.0 (9.6% complete)   lr: 0.000200   
+2021-11-01 14:35:56,011 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 39/395   Jobs: 1   Epoch: 0.59/6.0 (9.8% complete)   lr: 0.000199   
+2021-11-01 14:36:34,882 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 40/395   Jobs: 1   Epoch: 0.61/6.0 (10.1% complete)   lr: 0.000198   
+2021-11-01 14:37:17,976 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 41/395   Jobs: 1   Epoch: 0.62/6.0 (10.4% complete)   lr: 0.000197   
+2021-11-01 14:37:56,926 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 42/395   Jobs: 1   Epoch: 0.64/6.0 (10.6% complete)   lr: 0.000196   
+2021-11-01 14:38:35,852 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 43/395   Jobs: 1   Epoch: 0.65/6.0 (10.9% complete)   lr: 0.000195   
+2021-11-01 14:39:15,483 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 44/395   Jobs: 1   Epoch: 0.67/6.0 (11.1% complete)   lr: 0.000194   
+2021-11-01 14:39:54,526 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 45/395   Jobs: 1   Epoch: 0.68/6.0 (11.4% complete)   lr: 0.000192   
+2021-11-01 14:40:33,340 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 46/395   Jobs: 1   Epoch: 0.70/6.0 (11.6% complete)   lr: 0.000191   
+2021-11-01 14:41:12,654 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 47/395   Jobs: 1   Epoch: 0.71/6.0 (11.9% complete)   lr: 0.000190   
+2021-11-01 14:41:51,865 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 48/395   Jobs: 1   Epoch: 0.73/6.0 (12.1% complete)   lr: 0.000189   
+2021-11-01 14:42:30,160 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 49/395   Jobs: 1   Epoch: 0.74/6.0 (12.4% complete)   lr: 0.000188   
+2021-11-01 14:43:09,030 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 50/395   Jobs: 1   Epoch: 0.76/6.0 (12.6% complete)   lr: 0.000187   
+2021-11-01 14:43:48,414 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 51/395   Jobs: 1   Epoch: 0.77/6.0 (12.9% complete)   lr: 0.000186   
+2021-11-01 14:44:27,341 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 52/395   Jobs: 1   Epoch: 0.79/6.0 (13.1% complete)   lr: 0.000185   
+2021-11-01 14:45:06,528 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 53/395   Jobs: 1   Epoch: 0.80/6.0 (13.4% complete)   lr: 0.000184   
+2021-11-01 14:45:45,258 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 54/395   Jobs: 1   Epoch: 0.82/6.0 (13.6% complete)   lr: 0.000183   
+2021-11-01 14:46:23,884 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 55/395   Jobs: 1   Epoch: 0.83/6.0 (13.9% complete)   lr: 0.000182   
+2021-11-01 14:47:02,366 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 56/395   Jobs: 1   Epoch: 0.85/6.0 (14.1% complete)   lr: 0.000181   
+2021-11-01 14:47:41,569 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 57/395   Jobs: 1   Epoch: 0.86/6.0 (14.4% complete)   lr: 0.000179   
+2021-11-01 14:48:20,557 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 58/395   Jobs: 1   Epoch: 0.88/6.0 (14.6% complete)   lr: 0.000178   
+2021-11-01 14:48:59,166 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 59/395   Jobs: 1   Epoch: 0.89/6.0 (14.9% complete)   lr: 0.000177   
+2021-11-01 14:49:38,086 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 60/395   Jobs: 1   Epoch: 0.91/6.0 (15.2% complete)   lr: 0.000176   
+2021-11-01 14:50:20,888 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 61/395   Jobs: 1   Epoch: 0.92/6.0 (15.4% complete)   lr: 0.000175   
+2021-11-01 14:50:59,646 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 62/395   Jobs: 1   Epoch: 0.94/6.0 (15.7% complete)   lr: 0.000174   
+2021-11-01 14:51:38,826 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 63/395   Jobs: 1   Epoch: 0.95/6.0 (15.9% complete)   lr: 0.000173   
+2021-11-01 14:52:17,761 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 64/395   Jobs: 1   Epoch: 0.97/6.0 (16.2% complete)   lr: 0.000172   
+2021-11-01 14:52:56,718 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 65/395   Jobs: 1   Epoch: 0.98/6.0 (16.4% complete)   lr: 0.000171   
+2021-11-01 14:53:36,218 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 66/395   Jobs: 1   Epoch: 1.00/6.0 (16.7% complete)   lr: 0.000170   
+2021-11-01 14:54:15,190 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 67/395   Jobs: 1   Epoch: 1.02/6.0 (16.9% complete)   lr: 0.000169   
+2021-11-01 14:54:53,973 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 68/395   Jobs: 1   Epoch: 1.03/6.0 (17.2% complete)   lr: 0.000168   
+2021-11-01 14:55:33,284 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 69/395   Jobs: 1   Epoch: 1.05/6.0 (17.4% complete)   lr: 0.000167   
+2021-11-01 14:56:12,410 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 70/395   Jobs: 1   Epoch: 1.06/6.0 (17.7% complete)   lr: 0.000166   
+2021-11-01 14:56:50,815 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 71/395   Jobs: 1   Epoch: 1.08/6.0 (17.9% complete)   lr: 0.000165   
+2021-11-01 14:57:29,740 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 72/395   Jobs: 1   Epoch: 1.09/6.0 (18.2% complete)   lr: 0.000164   
+2021-11-01 14:58:09,048 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 73/395   Jobs: 1   Epoch: 1.11/6.0 (18.4% complete)   lr: 0.000164   
+2021-11-01 14:58:47,973 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 74/395   Jobs: 1   Epoch: 1.12/6.0 (18.7% complete)   lr: 0.000163   
+2021-11-01 14:59:27,138 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 75/395   Jobs: 1   Epoch: 1.14/6.0 (18.9% complete)   lr: 0.000162   
+2021-11-01 15:00:05,797 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 76/395   Jobs: 1   Epoch: 1.15/6.0 (19.2% complete)   lr: 0.000161   
+2021-11-01 15:00:44,531 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 77/395   Jobs: 1   Epoch: 1.17/6.0 (19.4% complete)   lr: 0.000160   
+2021-11-01 15:01:22,955 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 78/395   Jobs: 1   Epoch: 1.18/6.0 (19.7% complete)   lr: 0.000159   
+2021-11-01 15:02:02,135 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 79/395   Jobs: 1   Epoch: 1.20/6.0 (19.9% complete)   lr: 0.000158   
+2021-11-01 15:02:41,019 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 80/395   Jobs: 1   Epoch: 1.21/6.0 (20.2% complete)   lr: 0.000157   
+2021-11-01 15:03:24,109 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 81/395   Jobs: 1   Epoch: 1.23/6.0 (20.5% complete)   lr: 0.000156   
+2021-11-01 15:04:04,075 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 82/395   Jobs: 1   Epoch: 1.24/6.0 (20.7% complete)   lr: 0.000155   
+2021-11-01 15:04:43,964 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 83/395   Jobs: 1   Epoch: 1.26/6.0 (21.0% complete)   lr: 0.000154   
+2021-11-01 15:05:23,914 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 84/395   Jobs: 1   Epoch: 1.27/6.0 (21.2% complete)   lr: 0.000153   
+2021-11-01 15:06:04,167 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 85/395   Jobs: 1   Epoch: 1.29/6.0 (21.5% complete)   lr: 0.000153   
+2021-11-01 15:06:44,165 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 86/395   Jobs: 1   Epoch: 1.30/6.0 (21.7% complete)   lr: 0.000152   
+2021-11-01 15:07:24,019 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 87/395   Jobs: 1   Epoch: 1.32/6.0 (22.0% complete)   lr: 0.000151   
+2021-11-01 15:08:04,553 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 88/395   Jobs: 1   Epoch: 1.33/6.0 (22.2% complete)   lr: 0.000150   
+2021-11-01 15:08:44,508 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 89/395   Jobs: 1   Epoch: 1.35/6.0 (22.5% complete)   lr: 0.000149   
+2021-11-01 15:09:24,434 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 90/395   Jobs: 1   Epoch: 1.36/6.0 (22.7% complete)   lr: 0.000148   
+2021-11-01 15:10:04,717 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 91/395   Jobs: 1   Epoch: 1.38/6.0 (23.0% complete)   lr: 0.000147   
+2021-11-01 15:10:44,878 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 92/395   Jobs: 1   Epoch: 1.39/6.0 (23.2% complete)   lr: 0.000146   
+2021-11-01 15:11:24,204 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 93/395   Jobs: 1   Epoch: 1.41/6.0 (23.5% complete)   lr: 0.000146   
+2021-11-01 15:12:04,026 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 94/395   Jobs: 1   Epoch: 1.42/6.0 (23.7% complete)   lr: 0.000145   
+2021-11-01 15:12:44,433 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 95/395   Jobs: 1   Epoch: 1.44/6.0 (24.0% complete)   lr: 0.000144   
+2021-11-01 15:13:24,335 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 96/395   Jobs: 1   Epoch: 1.45/6.0 (24.2% complete)   lr: 0.000143   
+2021-11-01 15:14:04,413 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 97/395   Jobs: 1   Epoch: 1.47/6.0 (24.5% complete)   lr: 0.000142   
+2021-11-01 15:14:44,224 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 98/395   Jobs: 1   Epoch: 1.48/6.0 (24.7% complete)   lr: 0.000141   
+2021-11-01 15:15:24,028 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 99/395   Jobs: 1   Epoch: 1.50/6.0 (25.0% complete)   lr: 0.000141   
+2021-11-01 15:16:03,536 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 100/395   Jobs: 1   Epoch: 1.52/6.0 (25.3% complete)   lr: 0.000140   
+2021-11-01 15:16:47,483 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 101/395   Jobs: 1   Epoch: 1.53/6.0 (25.5% complete)   lr: 0.000139   
+2021-11-01 15:17:27,419 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 102/395   Jobs: 1   Epoch: 1.55/6.0 (25.8% complete)   lr: 0.000138   
+2021-11-01 15:18:07,015 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 103/395   Jobs: 1   Epoch: 1.56/6.0 (26.0% complete)   lr: 0.000137   
+2021-11-01 15:18:46,889 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 104/395   Jobs: 1   Epoch: 1.58/6.0 (26.3% complete)   lr: 0.000137   
+2021-11-01 15:19:26,768 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 105/395   Jobs: 1   Epoch: 1.59/6.0 (26.5% complete)   lr: 0.000136   
+2021-11-01 15:20:06,541 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 106/395   Jobs: 1   Epoch: 1.61/6.0 (26.8% complete)   lr: 0.000135   
+2021-11-01 15:20:46,734 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 107/395   Jobs: 1   Epoch: 1.62/6.0 (27.0% complete)   lr: 0.000134   
+2021-11-01 15:21:26,724 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 108/395   Jobs: 1   Epoch: 1.64/6.0 (27.3% complete)   lr: 0.000133   
+2021-11-01 15:22:06,613 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 109/395   Jobs: 1   Epoch: 1.65/6.0 (27.5% complete)   lr: 0.000133   
+2021-11-01 15:22:47,099 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 110/395   Jobs: 1   Epoch: 1.67/6.0 (27.8% complete)   lr: 0.000132   
+2021-11-01 15:23:27,165 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 111/395   Jobs: 1   Epoch: 1.68/6.0 (28.0% complete)   lr: 0.000131   
+2021-11-01 15:24:07,039 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 112/395   Jobs: 1   Epoch: 1.70/6.0 (28.3% complete)   lr: 0.000130   
+2021-11-01 15:24:47,366 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 113/395   Jobs: 1   Epoch: 1.71/6.0 (28.5% complete)   lr: 0.000130   
+2021-11-01 15:25:27,563 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 114/395   Jobs: 1   Epoch: 1.73/6.0 (28.8% complete)   lr: 0.000129   
+2021-11-01 15:26:07,022 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 115/395   Jobs: 1   Epoch: 1.74/6.0 (29.0% complete)   lr: 0.000128   
+2021-11-01 15:26:46,876 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 116/395   Jobs: 1   Epoch: 1.76/6.0 (29.3% complete)   lr: 0.000127   
+2021-11-01 15:27:27,173 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 117/395   Jobs: 1   Epoch: 1.77/6.0 (29.5% complete)   lr: 0.000127   
+2021-11-01 15:28:07,083 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 118/395   Jobs: 1   Epoch: 1.79/6.0 (29.8% complete)   lr: 0.000126   
+2021-11-01 15:28:47,293 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 119/395   Jobs: 1   Epoch: 1.80/6.0 (30.1% complete)   lr: 0.000125   
+2021-11-01 15:29:26,978 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 120/395   Jobs: 1   Epoch: 1.82/6.0 (30.3% complete)   lr: 0.000124   
+2021-11-01 15:30:10,289 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 121/395   Jobs: 1   Epoch: 1.83/6.0 (30.6% complete)   lr: 0.000124   
+2021-11-01 15:30:49,748 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 122/395   Jobs: 1   Epoch: 1.85/6.0 (30.8% complete)   lr: 0.000123   
+2021-11-01 15:31:30,096 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 123/395   Jobs: 1   Epoch: 1.86/6.0 (31.1% complete)   lr: 0.000122   
+2021-11-01 15:32:09,899 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 124/395   Jobs: 1   Epoch: 1.88/6.0 (31.3% complete)   lr: 0.000122   
+2021-11-01 15:32:49,472 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 125/395   Jobs: 1   Epoch: 1.89/6.0 (31.6% complete)   lr: 0.000121   
+2021-11-01 15:33:29,367 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 126/395   Jobs: 1   Epoch: 1.91/6.0 (31.8% complete)   lr: 0.000120   
+2021-11-01 15:34:09,222 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 127/395   Jobs: 1   Epoch: 1.92/6.0 (32.1% complete)   lr: 0.000119   
+2021-11-01 15:34:49,012 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 128/395   Jobs: 1   Epoch: 1.94/6.0 (32.3% complete)   lr: 0.000119   
+2021-11-01 15:35:29,242 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 129/395   Jobs: 1   Epoch: 1.95/6.0 (32.6% complete)   lr: 0.000118   
+2021-11-01 15:36:09,243 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 130/395   Jobs: 1   Epoch: 1.97/6.0 (32.8% complete)   lr: 0.000117   
+2021-11-01 15:36:49,149 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 131/395   Jobs: 1   Epoch: 1.98/6.0 (33.1% complete)   lr: 0.000117   
+2021-11-01 15:37:29,761 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 132/395   Jobs: 1   Epoch: 2.00/6.0 (33.3% complete)   lr: 0.000116   
+2021-11-01 15:38:09,748 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 133/395   Jobs: 1   Epoch: 2.02/6.0 (33.6% complete)   lr: 0.000115   
+2021-11-01 15:38:49,609 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 134/395   Jobs: 1   Epoch: 2.03/6.0 (33.8% complete)   lr: 0.000115   
+2021-11-01 15:39:29,903 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 135/395   Jobs: 1   Epoch: 2.05/6.0 (34.1% complete)   lr: 0.000114   
+2021-11-01 15:40:10,098 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 136/395   Jobs: 1   Epoch: 2.06/6.0 (34.3% complete)   lr: 0.000113   
+2021-11-01 15:40:49,502 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 137/395   Jobs: 1   Epoch: 2.08/6.0 (34.6% complete)   lr: 0.000113   
+2021-11-01 15:41:29,348 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 138/395   Jobs: 1   Epoch: 2.09/6.0 (34.8% complete)   lr: 0.000112   
+2021-11-01 15:42:09,700 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 139/395   Jobs: 1   Epoch: 2.11/6.0 (35.1% complete)   lr: 0.000111   
+2021-11-01 15:42:49,712 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 140/395   Jobs: 1   Epoch: 2.12/6.0 (35.4% complete)   lr: 0.000111   
+2021-11-01 15:43:33,541 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 141/395   Jobs: 1   Epoch: 2.14/6.0 (35.6% complete)   lr: 0.000110   
+2021-11-01 15:44:13,230 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 142/395   Jobs: 1   Epoch: 2.15/6.0 (35.9% complete)   lr: 0.000109   
+2021-11-01 15:44:52,997 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 143/395   Jobs: 1   Epoch: 2.17/6.0 (36.1% complete)   lr: 0.000109   
+2021-11-01 15:45:32,327 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 144/395   Jobs: 1   Epoch: 2.18/6.0 (36.4% complete)   lr: 0.000108   
+2021-11-01 15:46:12,517 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 145/395   Jobs: 1   Epoch: 2.20/6.0 (36.6% complete)   lr: 0.000108   
+2021-11-01 15:46:52,492 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 146/395   Jobs: 1   Epoch: 2.21/6.0 (36.9% complete)   lr: 0.000107   
+2021-11-01 15:47:32,005 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 147/395   Jobs: 1   Epoch: 2.23/6.0 (37.1% complete)   lr: 0.000106   
+2021-11-01 15:48:11,910 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 148/395   Jobs: 1   Epoch: 2.24/6.0 (37.4% complete)   lr: 0.000106   
+2021-11-01 15:48:51,801 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 149/395   Jobs: 1   Epoch: 2.26/6.0 (37.6% complete)   lr: 0.000105   
+2021-11-01 15:49:31,587 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 150/395   Jobs: 1   Epoch: 2.27/6.0 (37.9% complete)   lr: 0.000105   
+2021-11-01 15:50:11,781 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 151/395   Jobs: 1   Epoch: 2.29/6.0 (38.1% complete)   lr: 0.000104   
+2021-11-01 15:50:51,731 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 152/395   Jobs: 1   Epoch: 2.30/6.0 (38.4% complete)   lr: 0.000103   
+2021-11-01 15:51:31,656 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 153/395   Jobs: 1   Epoch: 2.32/6.0 (38.6% complete)   lr: 0.000103   
+2021-11-01 15:52:12,249 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 154/395   Jobs: 1   Epoch: 2.33/6.0 (38.9% complete)   lr: 0.000102   
+2021-11-01 15:52:52,321 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 155/395   Jobs: 1   Epoch: 2.35/6.0 (39.1% complete)   lr: 0.000102   
+2021-11-01 15:53:32,251 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 156/395   Jobs: 1   Epoch: 2.36/6.0 (39.4% complete)   lr: 0.000101   
+2021-11-01 15:54:12,492 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 157/395   Jobs: 1   Epoch: 2.38/6.0 (39.6% complete)   lr: 0.000100   
+2021-11-01 15:54:52,728 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 158/395   Jobs: 1   Epoch: 2.39/6.0 (39.9% complete)   lr: 0.000100   
+2021-11-01 15:55:32,116 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 159/395   Jobs: 1   Epoch: 2.41/6.0 (40.2% complete)   lr: 0.000099   
+2021-11-01 15:56:11,972 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 160/395   Jobs: 1   Epoch: 2.42/6.0 (40.4% complete)   lr: 0.000099   
+2021-11-01 15:56:55,959 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 161/395   Jobs: 1   Epoch: 2.44/6.0 (40.7% complete)   lr: 0.000098   
+2021-11-01 15:57:35,851 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 162/395   Jobs: 1   Epoch: 2.45/6.0 (40.9% complete)   lr: 0.000097   
+2021-11-01 15:58:16,028 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 163/395   Jobs: 1   Epoch: 2.47/6.0 (41.2% complete)   lr: 0.000097   
+2021-11-01 15:58:55,778 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 164/395   Jobs: 1   Epoch: 2.48/6.0 (41.4% complete)   lr: 0.000096   
+2021-11-01 15:59:35,546 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 165/395   Jobs: 1   Epoch: 2.50/6.0 (41.7% complete)   lr: 0.000096   
+2021-11-01 16:00:14,961 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 166/395   Jobs: 1   Epoch: 2.52/6.0 (41.9% complete)   lr: 0.000095   
+2021-11-01 16:00:55,169 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 167/395   Jobs: 1   Epoch: 2.53/6.0 (42.2% complete)   lr: 0.000095   
+2021-11-01 16:01:35,046 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 168/395   Jobs: 1   Epoch: 2.55/6.0 (42.4% complete)   lr: 0.000094   
+2021-11-01 16:02:14,596 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 169/395   Jobs: 1   Epoch: 2.56/6.0 (42.7% complete)   lr: 0.000094   
+2021-11-01 16:02:54,454 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 170/395   Jobs: 1   Epoch: 2.58/6.0 (42.9% complete)   lr: 0.000093   
+2021-11-01 16:03:34,358 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 171/395   Jobs: 1   Epoch: 2.59/6.0 (43.2% complete)   lr: 0.000092   
+2021-11-01 16:04:14,167 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 172/395   Jobs: 1   Epoch: 2.61/6.0 (43.4% complete)   lr: 0.000092   
+2021-11-01 16:04:54,412 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 173/395   Jobs: 1   Epoch: 2.62/6.0 (43.7% complete)   lr: 0.000091   
+2021-11-01 16:05:34,480 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 174/395   Jobs: 1   Epoch: 2.64/6.0 (43.9% complete)   lr: 0.000091   
+2021-11-01 16:06:14,355 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 175/395   Jobs: 1   Epoch: 2.65/6.0 (44.2% complete)   lr: 0.000090   
+2021-11-01 16:06:54,968 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 176/395   Jobs: 1   Epoch: 2.67/6.0 (44.4% complete)   lr: 0.000090   
+2021-11-01 16:07:34,930 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 177/395   Jobs: 1   Epoch: 2.68/6.0 (44.7% complete)   lr: 0.000089   
+2021-11-01 16:08:14,824 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 178/395   Jobs: 1   Epoch: 2.70/6.0 (44.9% complete)   lr: 0.000089   
+2021-11-01 16:08:55,095 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 179/395   Jobs: 1   Epoch: 2.71/6.0 (45.2% complete)   lr: 0.000088   
+2021-11-01 16:09:35,181 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 180/395   Jobs: 1   Epoch: 2.73/6.0 (45.5% complete)   lr: 0.000088   
+2021-11-01 16:10:17,983 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 181/395   Jobs: 1   Epoch: 2.74/6.0 (45.7% complete)   lr: 0.000087   
+2021-11-01 16:10:57,751 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 182/395   Jobs: 1   Epoch: 2.76/6.0 (46.0% complete)   lr: 0.000087   
+2021-11-01 16:11:37,967 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 183/395   Jobs: 1   Epoch: 2.77/6.0 (46.2% complete)   lr: 0.000086   
+2021-11-01 16:12:17,799 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 184/395   Jobs: 1   Epoch: 2.79/6.0 (46.5% complete)   lr: 0.000086   
+2021-11-01 16:12:57,982 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 185/395   Jobs: 1   Epoch: 2.80/6.0 (46.7% complete)   lr: 0.000085   
+2021-11-01 16:13:37,614 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 186/395   Jobs: 1   Epoch: 2.82/6.0 (47.0% complete)   lr: 0.000085   
+2021-11-01 16:14:17,352 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 187/395   Jobs: 1   Epoch: 2.83/6.0 (47.2% complete)   lr: 0.000084   
+2021-11-01 16:14:56,803 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 188/395   Jobs: 1   Epoch: 2.85/6.0 (47.5% complete)   lr: 0.000084   
+2021-11-01 16:15:37,109 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 189/395   Jobs: 1   Epoch: 2.86/6.0 (47.7% complete)   lr: 0.000083   
+2021-11-01 16:16:17,082 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 190/395   Jobs: 1   Epoch: 2.88/6.0 (48.0% complete)   lr: 0.000083   
+2021-11-01 16:16:56,681 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 191/395   Jobs: 1   Epoch: 2.89/6.0 (48.2% complete)   lr: 0.000082   
+2021-11-01 16:17:36,566 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 192/395   Jobs: 1   Epoch: 2.91/6.0 (48.5% complete)   lr: 0.000082   
+2021-11-01 16:18:16,443 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 193/395   Jobs: 1   Epoch: 2.92/6.0 (48.7% complete)   lr: 0.000081   
+2021-11-01 16:18:56,340 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 194/395   Jobs: 1   Epoch: 2.94/6.0 (49.0% complete)   lr: 0.000081   
+2021-11-01 16:19:36,541 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 195/395   Jobs: 1   Epoch: 2.95/6.0 (49.2% complete)   lr: 0.000080   
+2021-11-01 16:20:16,437 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 196/395   Jobs: 1   Epoch: 2.97/6.0 (49.5% complete)   lr: 0.000080   
+2021-11-01 16:20:56,390 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 197/395   Jobs: 1   Epoch: 2.98/6.0 (49.7% complete)   lr: 0.000080   
+2021-11-01 16:21:36,949 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 198/395   Jobs: 1   Epoch: 3.00/6.0 (50.0% complete)   lr: 0.000079   
+2021-11-01 16:22:17,075 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 199/395   Jobs: 1   Epoch: 3.02/6.0 (50.3% complete)   lr: 0.000079   
+2021-11-01 16:22:56,982 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 200/395   Jobs: 1   Epoch: 3.03/6.0 (50.5% complete)   lr: 0.000078   
+2021-11-01 16:23:40,867 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 201/395   Jobs: 1   Epoch: 3.05/6.0 (50.8% complete)   lr: 0.000078   
+2021-11-01 16:24:21,009 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 202/395   Jobs: 1   Epoch: 3.06/6.0 (51.0% complete)   lr: 0.000077   
+2021-11-01 16:25:00,426 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 203/395   Jobs: 1   Epoch: 3.08/6.0 (51.3% complete)   lr: 0.000077   
+2021-11-01 16:25:40,312 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 204/395   Jobs: 1   Epoch: 3.09/6.0 (51.5% complete)   lr: 0.000076   
+2021-11-01 16:26:20,595 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 205/395   Jobs: 1   Epoch: 3.11/6.0 (51.8% complete)   lr: 0.000076   
+2021-11-01 16:27:00,505 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 206/395   Jobs: 1   Epoch: 3.12/6.0 (52.0% complete)   lr: 0.000075   
+2021-11-01 16:27:40,718 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 207/395   Jobs: 1   Epoch: 3.14/6.0 (52.3% complete)   lr: 0.000075   
+2021-11-01 16:28:20,390 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 208/395   Jobs: 1   Epoch: 3.15/6.0 (52.5% complete)   lr: 0.000075   
+2021-11-01 16:29:00,171 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 209/395   Jobs: 1   Epoch: 3.17/6.0 (52.8% complete)   lr: 0.000074   
+2021-11-01 16:29:39,603 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 210/395   Jobs: 1   Epoch: 3.18/6.0 (53.0% complete)   lr: 0.000074   
+2021-11-01 16:30:19,880 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 211/395   Jobs: 1   Epoch: 3.20/6.0 (53.3% complete)   lr: 0.000073   
+2021-11-01 16:30:59,782 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 212/395   Jobs: 1   Epoch: 3.21/6.0 (53.5% complete)   lr: 0.000073   
+2021-11-01 16:31:39,390 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 213/395   Jobs: 1   Epoch: 3.23/6.0 (53.8% complete)   lr: 0.000072   
+2021-11-01 16:32:19,304 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 214/395   Jobs: 1   Epoch: 3.24/6.0 (54.0% complete)   lr: 0.000072   
+2021-11-01 16:32:59,172 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 215/395   Jobs: 1   Epoch: 3.26/6.0 (54.3% complete)   lr: 0.000072   
+2021-11-01 16:33:39,100 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 216/395   Jobs: 1   Epoch: 3.27/6.0 (54.5% complete)   lr: 0.000071   
+2021-11-01 16:34:19,314 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 217/395   Jobs: 1   Epoch: 3.29/6.0 (54.8% complete)   lr: 0.000071   
+2021-11-01 16:34:59,315 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 218/395   Jobs: 1   Epoch: 3.30/6.0 (55.1% complete)   lr: 0.000070   
+2021-11-01 16:35:39,222 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 219/395   Jobs: 1   Epoch: 3.32/6.0 (55.3% complete)   lr: 0.000070   
+2021-11-01 16:36:19,755 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 220/395   Jobs: 1   Epoch: 3.33/6.0 (55.6% complete)   lr: 0.000070   
+2021-11-01 16:37:03,437 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 221/395   Jobs: 1   Epoch: 3.35/6.0 (55.8% complete)   lr: 0.000069   
+2021-11-01 16:37:43,275 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 222/395   Jobs: 1   Epoch: 3.36/6.0 (56.1% complete)   lr: 0.000069   
+2021-11-01 16:38:23,528 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 223/395   Jobs: 1   Epoch: 3.38/6.0 (56.3% complete)   lr: 0.000068   
+2021-11-01 16:39:03,704 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 224/395   Jobs: 1   Epoch: 3.39/6.0 (56.6% complete)   lr: 0.000068   
+2021-11-01 16:39:43,066 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 225/395   Jobs: 1   Epoch: 3.41/6.0 (56.8% complete)   lr: 0.000068   
+2021-11-01 16:40:22,902 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 226/395   Jobs: 1   Epoch: 3.42/6.0 (57.1% complete)   lr: 0.000067   
+2021-11-01 16:41:03,164 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 227/395   Jobs: 1   Epoch: 3.44/6.0 (57.3% complete)   lr: 0.000067   
+2021-11-01 16:41:43,121 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 228/395   Jobs: 1   Epoch: 3.45/6.0 (57.6% complete)   lr: 0.000066   
+2021-11-01 16:42:23,230 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 229/395   Jobs: 1   Epoch: 3.47/6.0 (57.8% complete)   lr: 0.000066   
+2021-11-01 16:43:02,994 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 230/395   Jobs: 1   Epoch: 3.48/6.0 (58.1% complete)   lr: 0.000066   
+2021-11-01 16:43:42,800 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 231/395   Jobs: 1   Epoch: 3.50/6.0 (58.3% complete)   lr: 0.000065   
+2021-11-01 16:44:22,303 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 232/395   Jobs: 1   Epoch: 3.52/6.0 (58.6% complete)   lr: 0.000065   
+2021-11-01 16:45:02,492 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 233/395   Jobs: 1   Epoch: 3.53/6.0 (58.8% complete)   lr: 0.000064   
+2021-11-01 16:45:42,432 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 234/395   Jobs: 1   Epoch: 3.55/6.0 (59.1% complete)   lr: 0.000064   
+2021-11-01 16:46:22,009 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 235/395   Jobs: 1   Epoch: 3.56/6.0 (59.3% complete)   lr: 0.000064   
+2021-11-01 16:47:01,890 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 236/395   Jobs: 1   Epoch: 3.58/6.0 (59.6% complete)   lr: 0.000063   
+2021-11-01 16:47:41,859 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 237/395   Jobs: 1   Epoch: 3.59/6.0 (59.8% complete)   lr: 0.000063   
+2021-11-01 16:48:21,677 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 238/395   Jobs: 1   Epoch: 3.61/6.0 (60.1% complete)   lr: 0.000063   
+2021-11-01 16:49:01,860 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 239/395   Jobs: 1   Epoch: 3.62/6.0 (60.4% complete)   lr: 0.000062   
+2021-11-01 16:49:41,791 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 240/395   Jobs: 1   Epoch: 3.64/6.0 (60.6% complete)   lr: 0.000062   
+2021-11-01 16:50:25,302 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 241/395   Jobs: 1   Epoch: 3.65/6.0 (60.9% complete)   lr: 0.000062   
+2021-11-01 16:51:05,864 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 242/395   Jobs: 1   Epoch: 3.67/6.0 (61.1% complete)   lr: 0.000061   
+2021-11-01 16:51:45,933 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 243/395   Jobs: 1   Epoch: 3.68/6.0 (61.4% complete)   lr: 0.000061   
+2021-11-01 16:52:25,855 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 244/395   Jobs: 1   Epoch: 3.70/6.0 (61.6% complete)   lr: 0.000061   
+2021-11-01 16:53:06,120 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 245/395   Jobs: 1   Epoch: 3.71/6.0 (61.9% complete)   lr: 0.000060   
+2021-11-01 16:53:46,296 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 246/395   Jobs: 1   Epoch: 3.73/6.0 (62.1% complete)   lr: 0.000060   
+2021-11-01 16:54:25,656 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 247/395   Jobs: 1   Epoch: 3.74/6.0 (62.4% complete)   lr: 0.000059   
+2021-11-01 16:55:05,518 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 248/395   Jobs: 1   Epoch: 3.76/6.0 (62.6% complete)   lr: 0.000059   
+2021-11-01 16:55:45,848 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 249/395   Jobs: 1   Epoch: 3.77/6.0 (62.9% complete)   lr: 0.000059   
+2021-11-01 16:56:25,723 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 250/395   Jobs: 1   Epoch: 3.79/6.0 (63.1% complete)   lr: 0.000058   
+2021-11-01 16:57:05,922 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 251/395   Jobs: 1   Epoch: 3.80/6.0 (63.4% complete)   lr: 0.000058   
+2021-11-01 16:57:45,652 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 252/395   Jobs: 1   Epoch: 3.82/6.0 (63.6% complete)   lr: 0.000058   
+2021-11-01 16:58:25,373 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 253/395   Jobs: 1   Epoch: 3.83/6.0 (63.9% complete)   lr: 0.000057   
+2021-11-01 16:59:04,790 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 254/395   Jobs: 1   Epoch: 3.85/6.0 (64.1% complete)   lr: 0.000057   
+2021-11-01 16:59:45,039 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 255/395   Jobs: 1   Epoch: 3.86/6.0 (64.4% complete)   lr: 0.000057   
+2021-11-01 17:00:24,962 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 256/395   Jobs: 1   Epoch: 3.88/6.0 (64.6% complete)   lr: 0.000056   
+2021-11-01 17:01:04,524 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 257/395   Jobs: 1   Epoch: 3.89/6.0 (64.9% complete)   lr: 0.000056   
+2021-11-01 17:01:44,371 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 258/395   Jobs: 1   Epoch: 3.91/6.0 (65.2% complete)   lr: 0.000056   
+2021-11-01 17:02:24,202 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 259/395   Jobs: 1   Epoch: 3.92/6.0 (65.4% complete)   lr: 0.000055   
+2021-11-01 17:03:03,999 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 260/395   Jobs: 1   Epoch: 3.94/6.0 (65.7% complete)   lr: 0.000055   
+2021-11-01 17:03:47,937 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 261/395   Jobs: 1   Epoch: 3.95/6.0 (65.9% complete)   lr: 0.000055   
+2021-11-01 17:04:27,906 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 262/395   Jobs: 1   Epoch: 3.97/6.0 (66.2% complete)   lr: 0.000054   
+2021-11-01 17:05:07,798 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 263/395   Jobs: 1   Epoch: 3.98/6.0 (66.4% complete)   lr: 0.000054   
+2021-11-01 17:05:48,306 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 264/395   Jobs: 1   Epoch: 4.00/6.0 (66.7% complete)   lr: 0.000054   
+2021-11-01 17:06:28,214 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 265/395   Jobs: 1   Epoch: 4.02/6.0 (66.9% complete)   lr: 0.000054   
+2021-11-01 17:07:08,139 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 266/395   Jobs: 1   Epoch: 4.03/6.0 (67.2% complete)   lr: 0.000053   
+2021-11-01 17:07:48,479 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 267/395   Jobs: 1   Epoch: 4.05/6.0 (67.4% complete)   lr: 0.000053   
+2021-11-01 17:08:28,587 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 268/395   Jobs: 1   Epoch: 4.06/6.0 (67.7% complete)   lr: 0.000053   
+2021-11-01 17:09:07,908 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 269/395   Jobs: 1   Epoch: 4.08/6.0 (67.9% complete)   lr: 0.000052   
+2021-11-01 17:09:47,725 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 270/395   Jobs: 1   Epoch: 4.09/6.0 (68.2% complete)   lr: 0.000052   
+2021-11-01 17:10:27,957 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 271/395   Jobs: 1   Epoch: 4.11/6.0 (68.4% complete)   lr: 0.000052   
+2021-11-01 17:11:07,950 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 272/395   Jobs: 1   Epoch: 4.12/6.0 (68.7% complete)   lr: 0.000051   
+2021-11-01 17:11:48,110 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 273/395   Jobs: 1   Epoch: 4.14/6.0 (68.9% complete)   lr: 0.000051   
+2021-11-01 17:12:27,875 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 274/395   Jobs: 1   Epoch: 4.15/6.0 (69.2% complete)   lr: 0.000051   
+2021-11-01 17:13:07,588 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 275/395   Jobs: 1   Epoch: 4.17/6.0 (69.4% complete)   lr: 0.000051   
+2021-11-01 17:13:47,049 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 276/395   Jobs: 1   Epoch: 4.18/6.0 (69.7% complete)   lr: 0.000050   
+2021-11-01 17:14:27,212 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 277/395   Jobs: 1   Epoch: 4.20/6.0 (69.9% complete)   lr: 0.000050   
+2021-11-01 17:15:07,184 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 278/395   Jobs: 1   Epoch: 4.21/6.0 (70.2% complete)   lr: 0.000050   
+2021-11-01 17:15:46,700 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 279/395   Jobs: 1   Epoch: 4.23/6.0 (70.5% complete)   lr: 0.000049   
+2021-11-01 17:16:26,630 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 280/395   Jobs: 1   Epoch: 4.24/6.0 (70.7% complete)   lr: 0.000049   
+2021-11-01 17:17:10,142 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 281/395   Jobs: 1   Epoch: 4.26/6.0 (71.0% complete)   lr: 0.000049   
+2021-11-01 17:17:49,869 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 282/395   Jobs: 1   Epoch: 4.27/6.0 (71.2% complete)   lr: 0.000049   
+2021-11-01 17:18:30,033 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 283/395   Jobs: 1   Epoch: 4.29/6.0 (71.5% complete)   lr: 0.000048   
+2021-11-01 17:19:09,957 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 284/395   Jobs: 1   Epoch: 4.30/6.0 (71.7% complete)   lr: 0.000048   
+2021-11-01 17:19:49,905 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 285/395   Jobs: 1   Epoch: 4.32/6.0 (72.0% complete)   lr: 0.000048   
+2021-11-01 17:20:30,424 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 286/395   Jobs: 1   Epoch: 4.33/6.0 (72.2% complete)   lr: 0.000047   
+2021-11-01 17:21:10,503 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 287/395   Jobs: 1   Epoch: 4.35/6.0 (72.5% complete)   lr: 0.000047   
+2021-11-01 17:21:50,336 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 288/395   Jobs: 1   Epoch: 4.36/6.0 (72.7% complete)   lr: 0.000047   
+2021-11-01 17:22:30,591 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 289/395   Jobs: 1   Epoch: 4.38/6.0 (73.0% complete)   lr: 0.000047   
+2021-11-01 17:23:10,706 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 290/395   Jobs: 1   Epoch: 4.39/6.0 (73.2% complete)   lr: 0.000046   
+2021-11-01 17:23:50,094 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 291/395   Jobs: 1   Epoch: 4.41/6.0 (73.5% complete)   lr: 0.000046   
+2021-11-01 17:24:29,900 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 292/395   Jobs: 1   Epoch: 4.42/6.0 (73.7% complete)   lr: 0.000046   
+2021-11-01 17:25:10,247 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 293/395   Jobs: 1   Epoch: 4.44/6.0 (74.0% complete)   lr: 0.000046   
+2021-11-01 17:25:50,267 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 294/395   Jobs: 1   Epoch: 4.45/6.0 (74.2% complete)   lr: 0.000045   
+2021-11-01 17:26:30,452 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 295/395   Jobs: 1   Epoch: 4.47/6.0 (74.5% complete)   lr: 0.000045   
+2021-11-01 17:27:10,153 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 296/395   Jobs: 1   Epoch: 4.48/6.0 (74.7% complete)   lr: 0.000045   
+2021-11-01 17:27:49,879 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 297/395   Jobs: 1   Epoch: 4.50/6.0 (75.0% complete)   lr: 0.000044   
+2021-11-01 17:28:29,204 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 298/395   Jobs: 1   Epoch: 4.52/6.0 (75.3% complete)   lr: 0.000044   
+2021-11-01 17:29:09,332 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 299/395   Jobs: 1   Epoch: 4.53/6.0 (75.5% complete)   lr: 0.000044   
+2021-11-01 17:29:49,179 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 300/395   Jobs: 1   Epoch: 4.55/6.0 (75.8% complete)   lr: 0.000044   
+2021-11-01 17:30:32,327 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 301/395   Jobs: 1   Epoch: 4.56/6.0 (76.0% complete)   lr: 0.000043   
+2021-11-01 17:31:12,171 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 302/395   Jobs: 1   Epoch: 4.58/6.0 (76.3% complete)   lr: 0.000043   
+2021-11-01 17:31:52,125 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 303/395   Jobs: 1   Epoch: 4.59/6.0 (76.5% complete)   lr: 0.000043   
+2021-11-01 17:32:31,903 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 304/395   Jobs: 1   Epoch: 4.61/6.0 (76.8% complete)   lr: 0.000043   
+2021-11-01 17:33:12,147 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 305/395   Jobs: 1   Epoch: 4.62/6.0 (77.0% complete)   lr: 0.000042   
+2021-11-01 17:33:52,127 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 306/395   Jobs: 1   Epoch: 4.64/6.0 (77.3% complete)   lr: 0.000042   
+2021-11-01 17:34:32,014 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 307/395   Jobs: 1   Epoch: 4.65/6.0 (77.5% complete)   lr: 0.000042   
+2021-11-01 17:35:12,560 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 308/395   Jobs: 1   Epoch: 4.67/6.0 (77.8% complete)   lr: 0.000042   
+2021-11-01 17:35:52,584 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 309/395   Jobs: 1   Epoch: 4.68/6.0 (78.0% complete)   lr: 0.000041   
+2021-11-01 17:36:32,397 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 310/395   Jobs: 1   Epoch: 4.70/6.0 (78.3% complete)   lr: 0.000041   
+2021-11-01 17:37:12,784 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 311/395   Jobs: 1   Epoch: 4.71/6.0 (78.5% complete)   lr: 0.000041   
+2021-11-01 17:37:52,917 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 312/395   Jobs: 1   Epoch: 4.73/6.0 (78.8% complete)   lr: 0.000041   
+2021-11-01 17:38:32,321 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 313/395   Jobs: 1   Epoch: 4.74/6.0 (79.0% complete)   lr: 0.000041   
+2021-11-01 17:39:12,154 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 314/395   Jobs: 1   Epoch: 4.76/6.0 (79.3% complete)   lr: 0.000040   
+2021-11-01 17:39:52,358 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 315/395   Jobs: 1   Epoch: 4.77/6.0 (79.5% complete)   lr: 0.000040   
+2021-11-01 17:40:32,276 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 316/395   Jobs: 1   Epoch: 4.79/6.0 (79.8% complete)   lr: 0.000040   
+2021-11-01 17:41:12,336 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 317/395   Jobs: 1   Epoch: 4.80/6.0 (80.1% complete)   lr: 0.000040   
+2021-11-01 17:41:52,027 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 318/395   Jobs: 1   Epoch: 4.82/6.0 (80.3% complete)   lr: 0.000039   
+2021-11-01 17:42:31,795 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 319/395   Jobs: 1   Epoch: 4.83/6.0 (80.6% complete)   lr: 0.000039   
+2021-11-01 17:43:11,234 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 320/395   Jobs: 1   Epoch: 4.85/6.0 (80.8% complete)   lr: 0.000039   
+2021-11-01 17:43:55,105 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 321/395   Jobs: 1   Epoch: 4.86/6.0 (81.1% complete)   lr: 0.000039   
+2021-11-01 17:44:34,972 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 322/395   Jobs: 1   Epoch: 4.88/6.0 (81.3% complete)   lr: 0.000038   
+2021-11-01 17:45:14,467 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 323/395   Jobs: 1   Epoch: 4.89/6.0 (81.6% complete)   lr: 0.000038   
+2021-11-01 17:45:54,373 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 324/395   Jobs: 1   Epoch: 4.91/6.0 (81.8% complete)   lr: 0.000038   
+2021-11-01 17:46:34,199 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 325/395   Jobs: 1   Epoch: 4.92/6.0 (82.1% complete)   lr: 0.000038   
+2021-11-01 17:47:14,017 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 326/395   Jobs: 1   Epoch: 4.94/6.0 (82.3% complete)   lr: 0.000038   
+2021-11-01 17:47:54,117 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 327/395   Jobs: 1   Epoch: 4.95/6.0 (82.6% complete)   lr: 0.000037   
+2021-11-01 17:48:34,067 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 328/395   Jobs: 1   Epoch: 4.97/6.0 (82.8% complete)   lr: 0.000037   
+2021-11-01 17:49:13,906 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 329/395   Jobs: 1   Epoch: 4.98/6.0 (83.1% complete)   lr: 0.000037   
+2021-11-01 17:49:54,429 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 330/395   Jobs: 1   Epoch: 5.00/6.0 (83.3% complete)   lr: 0.000037   
+2021-11-01 17:50:34,400 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 331/395   Jobs: 1   Epoch: 5.02/6.0 (83.6% complete)   lr: 0.000036   
+2021-11-01 17:51:14,290 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 332/395   Jobs: 1   Epoch: 5.03/6.0 (83.8% complete)   lr: 0.000036   
+2021-11-01 17:51:54,498 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 333/395   Jobs: 1   Epoch: 5.05/6.0 (84.1% complete)   lr: 0.000036   
+2021-11-01 17:52:34,553 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 334/395   Jobs: 1   Epoch: 5.06/6.0 (84.3% complete)   lr: 0.000036   
+2021-11-01 17:53:13,928 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 335/395   Jobs: 1   Epoch: 5.08/6.0 (84.6% complete)   lr: 0.000036   
+2021-11-01 17:53:53,868 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 336/395   Jobs: 1   Epoch: 5.09/6.0 (84.8% complete)   lr: 0.000035   
+2021-11-01 17:54:34,101 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 337/395   Jobs: 1   Epoch: 5.11/6.0 (85.1% complete)   lr: 0.000035   
+2021-11-01 17:55:14,016 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 338/395   Jobs: 1   Epoch: 5.12/6.0 (85.4% complete)   lr: 0.000035   
+2021-11-01 17:55:54,157 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 339/395   Jobs: 1   Epoch: 5.14/6.0 (85.6% complete)   lr: 0.000035   
+2021-11-01 17:56:33,869 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 340/395   Jobs: 1   Epoch: 5.15/6.0 (85.9% complete)   lr: 0.000035   
+2021-11-01 17:57:17,025 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 341/395   Jobs: 1   Epoch: 5.17/6.0 (86.1% complete)   lr: 0.000034   
+2021-11-01 17:57:56,335 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 342/395   Jobs: 1   Epoch: 5.18/6.0 (86.4% complete)   lr: 0.000034   
+2021-11-01 17:58:36,500 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 343/395   Jobs: 1   Epoch: 5.20/6.0 (86.6% complete)   lr: 0.000034   
+2021-11-01 17:59:16,424 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 344/395   Jobs: 1   Epoch: 5.21/6.0 (86.9% complete)   lr: 0.000034   
+2021-11-01 17:59:55,962 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 345/395   Jobs: 1   Epoch: 5.23/6.0 (87.1% complete)   lr: 0.000034   
+2021-11-01 18:00:35,864 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 346/395   Jobs: 1   Epoch: 5.24/6.0 (87.4% complete)   lr: 0.000033   
+2021-11-01 18:01:15,763 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 347/395   Jobs: 1   Epoch: 5.26/6.0 (87.6% complete)   lr: 0.000033   
+2021-11-01 18:01:55,525 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 348/395   Jobs: 1   Epoch: 5.27/6.0 (87.9% complete)   lr: 0.000033   
+2021-11-01 18:02:35,641 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 349/395   Jobs: 1   Epoch: 5.29/6.0 (88.1% complete)   lr: 0.000033   
+2021-11-01 18:03:15,586 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 350/395   Jobs: 1   Epoch: 5.30/6.0 (88.4% complete)   lr: 0.000033   
+2021-11-01 18:03:55,491 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 351/395   Jobs: 1   Epoch: 5.32/6.0 (88.6% complete)   lr: 0.000032   
+2021-11-01 18:04:35,908 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 352/395   Jobs: 1   Epoch: 5.33/6.0 (88.9% complete)   lr: 0.000032   
+2021-11-01 18:05:15,889 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 353/395   Jobs: 1   Epoch: 5.35/6.0 (89.1% complete)   lr: 0.000032   
+2021-11-01 18:05:55,822 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 354/395   Jobs: 1   Epoch: 5.36/6.0 (89.4% complete)   lr: 0.000032   
+2021-11-01 18:06:36,058 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 355/395   Jobs: 1   Epoch: 5.38/6.0 (89.6% complete)   lr: 0.000032   
+2021-11-01 18:07:16,157 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 356/395   Jobs: 1   Epoch: 5.39/6.0 (89.9% complete)   lr: 0.000032   
+2021-11-01 18:07:55,402 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 357/395   Jobs: 1   Epoch: 5.41/6.0 (90.2% complete)   lr: 0.000031   
+2021-11-01 18:08:35,338 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 358/395   Jobs: 1   Epoch: 5.42/6.0 (90.4% complete)   lr: 0.000031   
+2021-11-01 18:09:15,604 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 359/395   Jobs: 1   Epoch: 5.44/6.0 (90.7% complete)   lr: 0.000031   
+2021-11-01 18:09:55,544 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 360/395   Jobs: 1   Epoch: 5.45/6.0 (90.9% complete)   lr: 0.000031   
+2021-11-01 18:10:39,320 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 361/395   Jobs: 1   Epoch: 5.47/6.0 (91.2% complete)   lr: 0.000031   
+2021-11-01 18:11:19,009 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 362/395   Jobs: 1   Epoch: 5.48/6.0 (91.4% complete)   lr: 0.000030   
+2021-11-01 18:11:58,683 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 363/395   Jobs: 1   Epoch: 5.50/6.0 (91.7% complete)   lr: 0.000030   
+2021-11-01 18:12:38,020 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 364/395   Jobs: 1   Epoch: 5.52/6.0 (91.9% complete)   lr: 0.000030   
+2021-11-01 18:13:18,127 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 365/395   Jobs: 1   Epoch: 5.53/6.0 (92.2% complete)   lr: 0.000030   
+2021-11-01 18:13:58,096 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 366/395   Jobs: 1   Epoch: 5.55/6.0 (92.4% complete)   lr: 0.000030   
+2021-11-01 18:14:37,591 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 367/395   Jobs: 1   Epoch: 5.56/6.0 (92.7% complete)   lr: 0.000030   
+2021-11-01 18:15:17,379 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 368/395   Jobs: 1   Epoch: 5.58/6.0 (92.9% complete)   lr: 0.000029   
+2021-11-01 18:15:57,244 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 369/395   Jobs: 1   Epoch: 5.59/6.0 (93.2% complete)   lr: 0.000029   
+2021-11-01 18:16:37,027 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 370/395   Jobs: 1   Epoch: 5.61/6.0 (93.4% complete)   lr: 0.000029   
+2021-11-01 18:17:17,250 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 371/395   Jobs: 1   Epoch: 5.62/6.0 (93.7% complete)   lr: 0.000029   
+2021-11-01 18:17:57,218 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 372/395   Jobs: 1   Epoch: 5.64/6.0 (93.9% complete)   lr: 0.000029   
+2021-11-01 18:18:37,128 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 373/395   Jobs: 1   Epoch: 5.65/6.0 (94.2% complete)   lr: 0.000029   
+2021-11-01 18:19:17,600 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 374/395   Jobs: 1   Epoch: 5.67/6.0 (94.4% complete)   lr: 0.000028   
+2021-11-01 18:19:57,512 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 375/395   Jobs: 1   Epoch: 5.68/6.0 (94.7% complete)   lr: 0.000028   
+2021-11-01 18:20:37,348 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 376/395   Jobs: 1   Epoch: 5.70/6.0 (94.9% complete)   lr: 0.000028   
+2021-11-01 18:21:17,584 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 377/395   Jobs: 1   Epoch: 5.71/6.0 (95.2% complete)   lr: 0.000028   
+2021-11-01 18:21:57,646 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 378/395   Jobs: 1   Epoch: 5.73/6.0 (95.5% complete)   lr: 0.000028   
+2021-11-01 18:22:36,990 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 379/395   Jobs: 1   Epoch: 5.74/6.0 (95.7% complete)   lr: 0.000028   
+2021-11-01 18:23:16,681 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 380/395   Jobs: 1   Epoch: 5.76/6.0 (96.0% complete)   lr: 0.000027   
+2021-11-01 18:24:00,562 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 381/395   Jobs: 1   Epoch: 5.77/6.0 (96.2% complete)   lr: 0.000027   
+2021-11-01 18:24:40,434 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 382/395   Jobs: 1   Epoch: 5.79/6.0 (96.5% complete)   lr: 0.000027   
+2021-11-01 18:25:20,554 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 383/395   Jobs: 1   Epoch: 5.80/6.0 (96.7% complete)   lr: 0.000027   
+2021-11-01 18:26:00,154 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 384/395   Jobs: 1   Epoch: 5.82/6.0 (97.0% complete)   lr: 0.000027   
+2021-11-01 18:26:39,848 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 385/395   Jobs: 1   Epoch: 5.83/6.0 (97.2% complete)   lr: 0.000027   
+2021-11-01 18:27:19,190 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 386/395   Jobs: 1   Epoch: 5.85/6.0 (97.5% complete)   lr: 0.000026   
+2021-11-01 18:27:59,430 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 387/395   Jobs: 1   Epoch: 5.86/6.0 (97.7% complete)   lr: 0.000026   
+2021-11-01 18:28:39,268 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 388/395   Jobs: 1   Epoch: 5.88/6.0 (98.0% complete)   lr: 0.000026   
+2021-11-01 18:29:18,800 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 389/395   Jobs: 1   Epoch: 5.89/6.0 (98.2% complete)   lr: 0.000026   
+2021-11-01 18:29:58,597 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 390/395   Jobs: 1   Epoch: 5.91/6.0 (98.5% complete)   lr: 0.000026   
+2021-11-01 18:30:38,513 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 391/395   Jobs: 1   Epoch: 5.92/6.0 (98.7% complete)   lr: 0.000026   
+2021-11-01 18:31:18,306 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 392/395   Jobs: 1   Epoch: 5.94/6.0 (99.0% complete)   lr: 0.000026   
+2021-11-01 18:31:58,378 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 393/395   Jobs: 1   Epoch: 5.95/6.0 (99.2% complete)   lr: 0.000025   
+2021-11-01 18:32:38,294 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 394/395   Jobs: 1   Epoch: 5.97/6.0 (99.5% complete)   lr: 0.000025   
+2021-11-01 18:33:18,113 [steps/nnet3/chain/train.py:529 - train - INFO ] Iter: 395/395   Jobs: 1   Epoch: 5.98/6.0 (99.7% complete)   lr: 0.000025   
+2021-11-01 18:33:58,613 [steps/nnet3/chain/train.py:585 - train - INFO ] Doing final combination to produce final.mdl
+2021-11-01 18:33:58,613 [steps/libs/nnet3/train/chain_objf/acoustic_model.py:571 - combine_models - INFO ] Combining set([384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383]) models.
+2021-11-01 18:34:25,619 [steps/nnet3/chain/train.py:614 - train - INFO ] Cleaning up the experiment directory exp/chain/tdnn_1a_sp
+steps/nnet2/remove_egs.sh: Finished deleting examples in exp/chain/tdnn_1a_sp/egs
+exp/chain/tdnn_1a_sp: num-iters=396 nj=1..1 num-params=17.1M dim=40+100->2977 combine=-0.030->-0.026 (over 15) xent:train/valid[263,395]=(-1.02,-0.708/-1.13,-0.988) logprob:train/valid[263,395]=(-0.053,-0.029/-0.073,-0.077)
+steps/nnet3/chain/train.py --stage -10 --cmd retry.pl run.pl --mem 4G --use-gpu wait --feat.online-ivector-dir exp/nnet3/ivectors_train_sp_hires --feat.cmvn-opts --norm-means=false --norm-vars=false --chain.xent-regularize 0.1 --chain.leaky-hmm-coefficient 0.1 --chain.l2-regularize 0.0 --chain.apply-deriv-weights false --chain.lm-opts=--num-extra-lm-states=2000 --trainer.dropout-schedule 0,0@0.20,0.5@0.50,0 --trainer.srand=0 --trainer.max-param-change=2.0 --trainer.num-epochs 6 --trainer.frames-per-iter 1500000 --trainer.optimization.num-jobs-initial 1 --trainer.optimization.num-jobs-final 1 --trainer.optimization.initial-effective-lrate 0.00025 --trainer.optimization.final-effective-lrate 0.000025 --trainer.num-chunk-per-minibatch=64,32 --trainer.add-option=--optimization.memory-compression-level=2 --egs.chunk-width=150,110,100 --egs.dir= --egs.opts --frames-overlap-per-eg 0 --constrained false --egs.stage -10 --reporting.email= --cleanup.remove-egs=true --feat-dir=data/train_sp_hires --tree-dir exp/chain/tree_a_sp --lat-dir=exp/chain/tri3b_train_sp_lats --dir exp/chain/tdnn_1a_sp
+['steps/nnet3/chain/train.py', '--stage', '-10', '--cmd', 'retry.pl run.pl --mem 4G', '--use-gpu', 'wait', '--feat.online-ivector-dir', 'exp/nnet3/ivectors_train_sp_hires', '--feat.cmvn-opts', '--norm-means=false --norm-vars=false', '--chain.xent-regularize', '0.1', '--chain.leaky-hmm-coefficient', '0.1', '--chain.l2-regularize', '0.0', '--chain.apply-deriv-weights', 'false', '--chain.lm-opts=--num-extra-lm-states=2000', '--trainer.dropout-schedule', '0,0@0.20,0.5@0.50,0', '--trainer.srand=0', '--trainer.max-param-change=2.0', '--trainer.num-epochs', '6', '--trainer.frames-per-iter', '1500000', '--trainer.optimization.num-jobs-initial', '1', '--trainer.optimization.num-jobs-final', '1', '--trainer.optimization.initial-effective-lrate', '0.00025', '--trainer.optimization.final-effective-lrate', '0.000025', '--trainer.num-chunk-per-minibatch=64,32', '--trainer.add-option=--optimization.memory-compression-level=2', '--egs.chunk-width=150,110,100', '--egs.dir=', '--egs.opts', '--frames-overlap-per-eg 0 --constrained false', '--egs.stage', '-10', '--reporting.email=', '--cleanup.remove-egs=true', '--feat-dir=data/train_sp_hires', '--tree-dir', 'exp/chain/tree_a_sp', '--lat-dir=exp/chain/tri3b_train_sp_lats', '--dir', 'exp/chain/tdnn_1a_sp']
+tree-info exp/chain/tree_a_sp/tree 
+tree-info exp/chain/tree_a_sp/tree 
+fstcomposecontext --context-size=2 --central-position=1 --read-disambig-syms=data/lang_test/phones/disambig.int --write-disambig-syms=data/lang_test/tmp/disambig_ilabels_2_1.int data/lang_test/tmp/ilabels_2_1.31235 data/lang_test/tmp/LG.fst 
+fstisstochastic data/lang_test/tmp/CLG_2_1.fst 
+-0.013927 -0.0144401
+[info]: CLG not stochastic.
+make-h-transducer --disambig-syms-out=exp/chain/tree_a_sp/graph/disambig_tid.int --transition-scale=1.0 data/lang_test/tmp/ilabels_2_1 exp/chain/tree_a_sp/tree exp/chain/tree_a_sp/final.mdl 
+fstrmepslocal 
+fsttablecompose exp/chain/tree_a_sp/graph/Ha.fst data/lang_test/tmp/CLG_2_1.fst 
+fstrmsymbols exp/chain/tree_a_sp/graph/disambig_tid.int 
+fstdeterminizestar --use-log=true 
+fstminimizeencoded 
+fstisstochastic exp/chain/tree_a_sp/graph/HCLGa.fst 
+0.206288 -0.052685
+HCLGa is not stochastic
+add-self-loops --self-loop-scale=1.0 --reorder=true exp/chain/tree_a_sp/final.mdl exp/chain/tree_a_sp/graph/HCLGa.fst 
+fstisstochastic exp/chain/tree_a_sp/graph/HCLG.fst 
+0.0978341 -0.0269699
+[info]: final HCLG is not stochastic.
+steps/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --extra-left-context 0 --extra-right-context 0 --extra-left-context-initial 0 --extra-right-context-final 0 --frames-per-chunk 150 --nj 12 --cmd retry.pl run.pl --mem 4G --num-threads 4 --online-ivector-dir exp/nnet3/ivectors_test_hires exp/chain/tree_a_sp/graph data/test_hires exp/chain/tdnn_1a_sp/decode_test
+steps/nnet3/decode.sh: feature type is raw
+steps/diagnostic/analyze_lats.sh --cmd retry.pl run.pl --mem 4G --iter final exp/chain/tree_a_sp/graph exp/chain/tdnn_1a_sp/decode_test
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1a_sp/decode_test/log/analyze_alignments.log
+Overall, lattice depth (10,50,90-percentile)=(1,4,69) and mean=31.1
+steps/diagnostic/analyze_lats.sh: see stats in exp/chain/tdnn_1a_sp/decode_test/log/analyze_lattice_depth_stats.log
+score best paths
+steps/scoring/score_kaldi_wer.sh --cmd retry.pl run.pl --mem 4G data/test_hires exp/chain/tree_a_sp/graph exp/chain/tdnn_1a_sp/decode_test
+steps/scoring/score_kaldi_wer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+steps/scoring/score_kaldi_cer.sh --stage 2 --cmd retry.pl run.pl --mem 4G data/test_hires exp/chain/tree_a_sp/graph exp/chain/tdnn_1a_sp/decode_test
+steps/scoring/score_kaldi_cer.sh: scoring with word insertion penalty=0.0,0.5,1.0
+score confidence and timing with sclite
+Decoding done.
+./run.sh: training succedded
