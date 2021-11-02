@@ -17,7 +17,7 @@ https://drive.google.com/file/d/1PPpZ47G37YvErhBJtBoi0_v1MawNQ-u8/view?usp=shari
 # Download common_voice-v7.0-ar.zip
 unzip common_voice-v7.0-ar.zip
 # Create kaldiasr container
-docker run --gpus 1 -it --rm -v <path to common_voice-v7.0-ar>:/opt/kaldi/egs/asr/cv kaldiasr/kaldi:latest bash
+docker run -it --rm -v <path to common_voice-v7.0-ar>:/opt/kaldi/egs/asr/cv kaldiasr/kaldi:latest bash
 # Inside the container run these commands
 cp egs/asr/cv
 ln -s ../../wsj/s5/utils/ utils
