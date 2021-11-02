@@ -25,6 +25,9 @@ ln -s ../../wsj/s5/steps/ steps
 # Test the system
 ./decode.sh file.wav output.txt
 ```
+## Training
+
+I modified gale_arabic recipe to run it on Common Voice Corpus 7.0 (https://github.com/kaldi-asr/kaldi/tree/master/egs/gale_arabic). Have a the training script (run.sh) and its output (log). 
 
 ## Results
 ```
