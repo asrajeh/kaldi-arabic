@@ -4,7 +4,7 @@ This is an experiment to build HHM-based Arabic ASR using Kaldi engine (https://
 
 I modified gale_arabic recipe to run it on Common Voice Corpus 7.0 (https://commonvoice.mozilla.org/en/datasets). In this version, Arabic voices are 1,052 and the total length is 117 hours. However, the system is trained on just 30 hours and tested on 12 hours. 
 
-Training on a workstation (CPU: Intel 3.5 GHz, GPU: RTX 2080 Ti) took 9 hours. The DNN-HMM based model reach 29% WER.
+Training on a workstation (CPU: Intel 3.5 GHz, GPU: RTX 2080 Ti) took 9 hours. The DNN-HMM based model reached 29% WER.
 
 You can download the model from here (136 MB):
 
