@@ -1,0 +1,9 @@
+The system achieved 29.67% WER. It is trained on  Common Voice Corpus 7.0 
+(train: 30 hours, test: 12 hours).
+
+The experiment took 9 hours to run on our deep learning machine
+(CPU: Intel 3.5 GHz, GPU: RTX 2080 Ti).
+
+%WER 58.96 [ 30985 / 52552, 1563 ins, 5970 del, 23452 sub ] exp/tri1/decode/wer_13_0.0
+%WER 54.95 [ 28878 / 52552, 1298 ins, 5950 del, 21630 sub ] exp/tri2b/decode/wer_16_0.0
+%WER 29.67 [ 15591 / 52552, 642 ins, 2574 del, 12375 sub ] exp/chain/tdnn_1a_sp/decode_test/wer_14_0.0
