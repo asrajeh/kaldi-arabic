@@ -19,7 +19,7 @@ unzip common_voice-v7.0-ar.zip
 # Create kaldiasr container
 docker run -it --rm -v <path to common_voice-v7.0-ar>:/opt/kaldi/egs/asr/cv kaldiasr/kaldi:latest bash
 # Inside the container run these commands
-cp egs/asr/cv
+cd egs/asr/cv
 ln -s ../../wsj/s5/utils/ utils
 ln -s ../../wsj/s5/steps/ steps
 # Test the system
